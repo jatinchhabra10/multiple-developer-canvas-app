@@ -1,0 +1,32 @@
+{
+  "b0fd7a50-b12b-46db-a39d-d2383e01a483": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://suncor.sharepoint.com/sites/BPReliability/,b!HvVtdDV57UiSzgNIg-sSmH7I2TNDZEtNvoL4819ytyYCofZzYDSwQ4WLDtIviNGY,01IYI6SP3USYWJGTIRQ5A2NHDOQDUXNQCL": {
+        "dataSources": {
+          "PowerAppsTesting": {
+            "tableName": "{9C92275D-75AD-4D62-814A-EF9222400E39}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "PowerAppsTesting"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "b0fd7a50-b12b-46db-a39d-d2383e01a483"
+  }
+}
