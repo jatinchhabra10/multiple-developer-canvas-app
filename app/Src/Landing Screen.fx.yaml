@@ -358,7 +358,7 @@
                         Height: =32
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
-                        Text: ="Featured item"
+                        Text: ="Large Scale Data Update"
                         Width: =Parent.Width
                         X: =0
                         Y: =0
@@ -373,7 +373,7 @@
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
                         Size: =16
-                        Text: ="Short description or engaging message"
+                        Text: ="Use this tool to update multiple records if the entries are not identical"
                         VerticalAlign: ='TextCanvas.VerticalAlign'.Top
                         Width: =Parent.Width
                         X: =0
