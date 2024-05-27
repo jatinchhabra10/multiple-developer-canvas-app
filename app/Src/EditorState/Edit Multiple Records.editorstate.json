@@ -3305,7 +3305,7 @@
       "MetaDataIDKey": "%DeleteConfirmDialogContainer.ID%",
       "Name": "DeleteConfirmDialogContainer1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3515,7 +3515,7 @@
       "MetaDataIDKey": "%DeleteIconButton.ID%",
       "Name": "DeleteIconButton1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3824,7 +3824,7 @@
       "MetaDataIDKey": "%EditIconButton.ID%",
       "Name": "EditIconButton1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4429,7 +4429,7 @@
       "MetaDataIDKey": "",
       "Name": "Label2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7619,7 +7619,7 @@
       "MetaDataIDKey": "%ResetFormButton.ID%",
       "Name": "ResetFormButton1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7857,7 +7857,7 @@
       "MetaDataIDKey": "%RightContainer.ID%",
       "Name": "RightContainer1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9172,7 +9172,7 @@
       "MetaDataIDKey": "%SelectedRecordTitle.ID%",
       "Name": "SelectedRecordTitle1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9572,7 +9572,7 @@
       "MetaDataIDKey": "%SidebarContainer.ID%",
       "Name": "SidebarContainer1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9804,7 +9804,7 @@
       "MetaDataIDKey": "%SubmitFormButton.ID%",
       "Name": "SubmitFormButton1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
