@@ -69,7 +69,7 @@
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =10
                 LayoutMinHeight: =100
-                LayoutMinWidth: =250
+                LayoutMinWidth: =200
                 LayoutMode: =LayoutMode.Auto
                 PaddingLeft: =16
                 PaddingRight: =16
@@ -199,6 +199,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         Height: =44
+                        LayoutMinWidth: =250
                         Size: =13
                         Text: ="New"
                         ZIndex: =12
@@ -563,55 +564,6 @@
                         Width: =50
                         ZIndex: =7
 
-                Table1 As Table.pcfdataset:
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
-                    Items: =PowerAppsTesting
-                    LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
-                    LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
-                    onCellValueChange: =false
-                    onFilter: =false
-                    onNavigate: =false
-                    onRowSelect: =false
-                    onSave: =false
-                    OnSelect: =false
-                    Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
-                    X: =0
-                    Y: =0
-                    ZIndex: =17
-
-                    "'ASSET TAG1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="ASSET TAG"
-                        FieldName: ="ASSET TAG"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =1
-                        ZIndex: =30
-
-                    "'ASSIGNED TO1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="ASSIGNED TO"
-                        FieldName: ="ASSIGNED TO"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =2
-                        ZIndex: =31
-
-                    "'STRATEGY STAGE1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="STRATEGY STAGE"
-                        FieldName: ="STRATEGY STAGE"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =3
-                        ZIndex: =32
-
-                    "'DUE DATE1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="DUE DATE"
-                        FieldName: ="DUE DATE"
-                        FieldType: ="d"
-                        FieldVariantName: ="textualColumn"
-                        Order: =4
-                        ZIndex: =33
-
             DeleteConfirmDialogContainer1_2 As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
                 FillPortions: =7
@@ -707,11 +659,214 @@
                         ZIndex: =29
 
     ButtonCanvas1 As Button:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =35
         Text: ="Update"
         Width: =152
         X: =1180
         Y: =708
         ZIndex: =2
+
+    Form2 As form.PowerApps_CoreControls_Form:
+        BorderColor: =RGBA(245, 245, 245, 1)
+        DataSource: =PowerAppsTesting
+        Height: =526
+        Item: =RecordsGallery1_2.Selected
+        UseFluentV9Cards: =true
+        Width: =924
+        X: =419
+        Y: =165
+        ZIndex: =3
+
+        "'ASSET TAG_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =RGBA(245, 245, 245, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ASSET TAG"
+            Default: =ThisItem.'ASSET TAG'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@PowerAppsTesting],DataSourceInfo.DisplayName,'ASSET TAG')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =58
+            MaxLength: =DataSourceInfo([@PowerAppsTesting], DataSourceInfo.MaxLength, 'ASSET TAG')
+            Required: =false
+            Update: =DataCardValue1.Value
+            Width: =308
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey1 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue1 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ='TextInputCanvas.Mode'.SingleLine
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 4
+                ZIndex: =2
+
+            ErrorMessage1 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+        "'ASSIGNED TO_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =RGBA(245, 245, 245, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ASSIGNED TO"
+            Default: =ThisItem.'ASSIGNED TO'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@PowerAppsTesting],DataSourceInfo.DisplayName,'ASSIGNED TO')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@PowerAppsTesting], DataSourceInfo.MaxLength, 'ASSIGNED TO')
+            Required: =false
+            Update: =DataCardValue5.Value
+            Width: =308
+            WidthFit: =false
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey5 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue5 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 4
+                ZIndex: =2
+
+            ErrorMessage2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        "'STRATEGY STAGE_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =RGBA(245, 245, 245, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="STRATEGY STAGE"
+            Default: =ThisItem.'STRATEGY STAGE'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@PowerAppsTesting],DataSourceInfo.DisplayName,'STRATEGY STAGE')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@PowerAppsTesting], DataSourceInfo.MaxLength, 'STRATEGY STAGE')
+            Required: =false
+            Update: =DataCardValue13.Value
+            Width: =308
+            X: =2
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey13 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue13 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 4
+                ZIndex: =2
+
+            ErrorMessage9 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue13.Y + DataCardValue13.Height
+                ZIndex: =3
+
+            StarVisible9 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey13.Y
+                ZIndex: =4
 

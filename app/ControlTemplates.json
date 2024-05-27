@@ -212,20 +212,6 @@
     "OverridableProperties": {},
     "Version": "2.5.1"
   },
-  "pcfDataField": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/pcfDataField",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "pcfDataField",
-    "OverridableProperties": {},
-    "Version": "1.4.0"
-  },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -253,21 +239,6 @@
     "Name": "screen",
     "OverridableProperties": {},
     "Version": "1.0"
-  },
-  "Table": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerAppsOneGrid",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerAppsOneGrid",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Table",
-    "Version": "1.0.190"
   },
   "text": {
     "CustomGroupControlTemplateName": "",
@@ -297,6 +268,21 @@
     "OverridableProperties": {},
     "TemplateDisplayName": "Text",
     "Version": "0.0.25"
+  },
+  "Text input": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TextInputCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_TextInputCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Text input",
+    "Version": "0.0.26"
   },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",
