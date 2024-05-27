@@ -347,7 +347,7 @@
                     Width: =Parent.Width
                     ZIndex: =20
 
-                    FeatureItemButton31 As Button:
+                    "'Large Scale Data' As Button":
                         AccessibleLabel: ="Featured item button"
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
                         BasePaletteColor: =
