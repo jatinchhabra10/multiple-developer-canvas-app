@@ -1,7 +1,9 @@
 "'Existing Strategy Baseline' As screen.'copilotAppSinglePage_ver1.0'":
-    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
 
     ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
         Fill: =RGBA(250, 250, 250, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -12,6 +14,10 @@
         PaddingLeft: =16
         PaddingRight: =16
         PaddingTop: =16
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
         Width: =Parent.Width
         ZIndex: =1
 
@@ -32,7 +38,7 @@
             TableNameLabel1 As label:
                 AlignInContainer: =AlignInContainer.Stretch
                 Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =App.Theme.Colors.Primary
                 FillPortions: =1
                 FontWeight: =FontWeight.Semibold
                 Height: =68
@@ -45,13 +51,14 @@
                 ZIndex: =3
 
             Arrow1 As arrow.backArrow:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                Fill: =RGBA(0, 120, 212, 1)
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                Fill: =App.Theme.Colors.Primary
                 OnSelect: =Navigate('Landing Screen')
                 ZIndex: =4
 
         BodyContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
             LayoutGap: =16
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -60,6 +67,10 @@
             PaddingLeft: =2
             PaddingRight: =2
             PaddingTop: =2
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
             ZIndex: =5
 
             SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
@@ -104,7 +115,7 @@
                         ZIndex: =8
 
                     SearchIcon1 As icon:
-                        Color: =RGBA(0, 120, 212, 1)
+                        Color: =App.Theme.Colors.Primary
                         Height: =44
                         Icon: =Icon.Search
                         PaddingBottom: =10
@@ -115,20 +126,17 @@
                         ZIndex: =9
 
                     Label1 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(50, 49, 48, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(161, 159, 157, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
                         Size: =13
                         Text: ="Placeholder for Filters"
                         Width: =300
                         ZIndex: =10
 
                 NewRecordButtonBarContainer1 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
                     FillPortions: =0
                     Height: =44
                     LayoutMinHeight: =100
@@ -141,16 +149,11 @@
                     ZIndex: =10
 
                     NewRecordAddIcon1 As icon:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(0, 120, 212, 1)
-                        DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                        DisabledColor: =RGBA(225, 223, 221, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =44
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(16, 110, 190, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Add
                         OnSelect: |-
                             =NewForm(Form1); UpdateContext({ newMode: true });
@@ -158,22 +161,15 @@
                         PaddingLeft: =10
                         PaddingRight: =10
                         PaddingTop: =10
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =RGBA(16, 110, 190, 1)
-                        PressedFill: =RGBA(0, 0, 0, 0)
                         Width: =44
                         ZIndex: =11
 
                     NewRecordLabel1 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(50, 49, 48, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
                         FillPortions: =1
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
+                        Font: =App.Theme.Font
                         Height: =44
                         Size: =13
                         Text: ="New"
@@ -181,20 +177,14 @@
 
                 RecordsListSeparator1 As rectangle:
                     AlignInContainer: =AlignInContainer.Stretch
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    DisabledFill: =RGBA(161, 159, 157, 1)
-                    Fill: =RGBA(225, 223, 221, 1)
-                    FocusedBorderThickness: =4
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Fill: =App.Theme.Colors.Primary
                     Height: =1
-                    HoverFill: =RGBA(0, 120, 212, 1)
                     LayoutMinWidth: =200
-                    PressedFill: =RGBA(0, 120, 212, 1)
                     ZIndex: =13
 
                 "RecordsGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
-                    BorderColor: =RGBA(245, 245, 245, 1)
+                    BorderColor: =App.Theme.Colors.Darker40
                     DelayItemLoading: =true
                     Fill: =RGBA(250, 250, 250, 1)
                     Items: |-
@@ -215,8 +205,8 @@
 
                     Title1 As label:
                         Color: =RGBA(50, 49, 48, 1)
-                        DisabledColor: =RGBA(161, 159, 157, 1)
-                        Font: =Font.'Segoe UI'
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =Self.Size * 1.8
                         OnSelect: =Select(Parent)
@@ -232,9 +222,9 @@
                         ZIndex: =1
 
                     Subtitle1 As label:
-                        Color: =RGBA(96, 94, 92, 1)
-                        DisabledColor: =RGBA(161, 159, 157, 1)
-                        Font: =Font.'Segoe UI'
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =Self.Size * 1.8
                         OnSelect: =Select(Parent)
@@ -251,9 +241,9 @@
                         ZIndex: =2
 
                     Body1 As label:
-                        Color: =RGBA(96, 94, 92, 1)
-                        DisabledColor: =RGBA(161, 159, 157, 1)
-                        Font: =Font.'Segoe UI'
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =Self.Size * 1.8
                         OnSelect: =Select(Parent)
@@ -271,25 +261,17 @@
 
                     NextArrow1 As icon.ChevronRight:
                         AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderColor: =App.Theme.Colors.Darker40
                         Color: =RGBA(166, 166, 166, 1)
-                        DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                        DisabledColor: =RGBA(225, 223, 221, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =50
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(16, 110, 190, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.ChevronRight
                         OnSelect: =Select(Parent)
                         PaddingBottom: =16
                         PaddingLeft: =16
                         PaddingRight: =16
                         PaddingTop: =16
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =RGBA(16, 110, 190, 1)
-                        PressedFill: =RGBA(0, 0, 0, 0)
                         Tooltip: ="View item details"
                         Width: =50
                         X: =Parent.TemplateWidth - Self.Width - 12
@@ -297,7 +279,7 @@
                         ZIndex: =4
 
                     Separator1 As rectangle:
-                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderColor: =App.Theme.Colors.Darker40
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =8
                         OnSelect: =Select(Parent)
@@ -306,8 +288,8 @@
                         ZIndex: =5
 
                     Rectangle1 As rectangle:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Fill: =RGBA(0, 120, 212, 1)
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Fill: =App.Theme.Colors.Darker30
                         Height: =Parent.TemplateHeight - Separator1.Height
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
@@ -315,6 +297,7 @@
                         ZIndex: =6
 
             RightContainer1 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
                 FillPortions: =7
                 LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutDirection: =LayoutDirection.Vertical
@@ -350,16 +333,11 @@
                     ZIndex: =16
 
                     BackIconButton1 As icon.Add:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(0, 120, 212, 1)
-                        DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                        DisabledColor: =RGBA(225, 223, 221, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =50
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(16, 110, 190, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.ChevronLeft
                         OnSelect: |-
                             =UpdateContext({ itemSelected: false })
@@ -367,9 +345,6 @@
                         PaddingLeft: =12
                         PaddingRight: =12
                         PaddingTop: =12
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =RGBA(16, 110, 190, 1)
-                        PressedFill: =RGBA(0, 0, 0, 0)
                         TabIndex: =0
                         Visible: =If('Existing Strategy Baseline'.Size = ScreenSize.Small, And(!editMode, !newMode, !deleteMode), false)
                         Width: =50
@@ -377,57 +352,38 @@
 
                     SelectedRecordTitle1 As label:
                         AlignInContainer: =AlignInContainer.Stretch
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(50, 49, 48, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
                         FillPortions: =1
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        PaddingLeft: =30
+                        Font: =App.Theme.Font
                         Size: =13
                         Text: =RecordsGallery1.Selected.'ACR - CONFIRMED'
                         ZIndex: =18
 
                     SubmitFormButton1 As icon:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(0, 120, 212, 1)
-                        DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                        DisabledColor: =RGBA(225, 223, 221, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =50
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(16, 110, 190, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Check
                         OnSelect: =SubmitForm(Form1)
                         PaddingBottom: =12
                         PaddingLeft: =12
                         PaddingRight: =12
                         PaddingTop: =12
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =RGBA(16, 110, 190, 1)
-                        PressedFill: =RGBA(0, 0, 0, 0)
                         TabIndex: =0
                         Visible: =Or(editMode, newMode)
                         Width: =50
                         ZIndex: =19
 
                     ResetFormButton1 As icon:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(0, 120, 212, 1)
-                        DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                        DisabledColor: =RGBA(225, 223, 221, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =50
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(16, 110, 190, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Cancel
                         OnSelect: |-
                             =ResetForm(Form1); UpdateContext({ editMode: false, newMode: false });
@@ -435,25 +391,17 @@
                         PaddingLeft: =12
                         PaddingRight: =12
                         PaddingTop: =12
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =RGBA(16, 110, 190, 1)
-                        PressedFill: =RGBA(0, 0, 0, 0)
                         TabIndex: =0
                         Visible: =Or(editMode, newMode)
                         Width: =50
                         ZIndex: =20
 
                     EditIconButton1 As icon:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(0, 120, 212, 1)
-                        DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                        DisabledColor: =RGBA(225, 223, 221, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =50
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(16, 110, 190, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Edit
                         OnSelect: |-
                             =UpdateContext({ editMode: true, selectedRecord: RecordsGallery1.Selected })
@@ -461,25 +409,17 @@
                         PaddingLeft: =12
                         PaddingRight: =12
                         PaddingTop: =12
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =RGBA(16, 110, 190, 1)
-                        PressedFill: =RGBA(0, 0, 0, 0)
                         TabIndex: =0
                         Visible: =And(!editMode, !newMode, !deleteMode)
                         Width: =50
                         ZIndex: =21
 
                     DeleteIconButton1 As icon:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(0, 120, 212, 1)
-                        DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                        DisabledColor: =RGBA(225, 223, 221, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =50
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(16, 110, 190, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
                         OnSelect: |-
                             =UpdateContext({ deleteMode: true, deleteCancelled: false, selectedRecord: RecordsGallery1.Selected })
@@ -487,9 +427,6 @@
                         PaddingLeft: =12
                         PaddingRight: =12
                         PaddingTop: =12
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =RGBA(16, 110, 190, 1)
-                        PressedFill: =RGBA(0, 0, 0, 0)
                         TabIndex: =0
                         Visible: =And(!editMode, !newMode, !deleteMode)
                         Width: =50
@@ -509,7 +446,7 @@
                     ZIndex: =23
 
                     Form1 As form:
-                        BorderColor: =RGBA(245, 245, 245, 1)
+                        BorderColor: =App.Theme.Colors.Darker40
                         DataSource: =PowerAppsTesting
                         DefaultMode: =If(newMode, FormMode.New, editMode, FormMode.Edit, FormMode.View)
                         Item: =RecordsGallery1.Selected
@@ -522,7 +459,7 @@
                         ZIndex: =24
 
                         "'ASSET TAG_DataCard2' As typedDataCard.textualViewCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ASSET TAG"
                             Default: =ThisItem.'ASSET TAG'
@@ -538,17 +475,10 @@
 
                             DataCardKey4 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =34
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
                                 Width: =Parent.Width - 60
@@ -559,15 +489,11 @@
 
                             DataCardValue4 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =RGBA(0, 0, 0, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisplayMode: =Parent.DisplayMode
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
+                                Font: =App.Theme.Font
                                 Height: =27
                                 PaddingLeft: =0
                                 PaddingRight: =0
@@ -580,7 +506,7 @@
                                 ZIndex: =2
 
                         "'ASSIGNED TO_DataCard2' As typedDataCard.textualViewCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ASSIGNED TO"
                             Default: =ThisItem.'ASSIGNED TO'
@@ -596,17 +522,10 @@
 
                             DataCardKey3 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =34
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
                                 Width: =Parent.Width - 60
@@ -617,15 +536,11 @@
 
                             DataCardValue3 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =RGBA(0, 0, 0, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisplayMode: =Parent.DisplayMode
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
+                                Font: =App.Theme.Font
                                 Height: =27
                                 PaddingLeft: =0
                                 PaddingRight: =0
@@ -638,7 +553,7 @@
                                 ZIndex: =2
 
                         "'TASK TITLE_DataCard2' As typedDataCard.textualViewCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="TASK TITLE"
                             Default: =ThisItem.'TASK TITLE'
@@ -654,17 +569,10 @@
 
                             DataCardKey2 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =34
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
                                 Width: =Parent.Width - 60
@@ -675,15 +583,11 @@
 
                             DataCardValue2 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =RGBA(0, 0, 0, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisplayMode: =Parent.DisplayMode
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
+                                Font: =App.Theme.Font
                                 Height: =27
                                 PaddingLeft: =0
                                 PaddingRight: =0
@@ -696,7 +600,7 @@
                                 ZIndex: =2
 
                         "'DUE DATE_DataCard2' As typedDataCard.textualViewCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="DUE DATE"
                             Default: =ThisItem.'DUE DATE'
@@ -712,17 +616,10 @@
 
                             DataCardKey6 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =34
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
                                 Width: =Parent.Width - 60
@@ -733,15 +630,11 @@
 
                             DataCardValue6 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =RGBA(0, 0, 0, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisplayMode: =Parent.DisplayMode
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
+                                Font: =App.Theme.Font
                                 Height: =27
                                 PaddingLeft: =0
                                 PaddingRight: =0
@@ -754,7 +647,7 @@
                                 ZIndex: =2
 
                         DataCard1 As typedDataCard.blankCard:
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DisplayMode: =DisplayMode.Edit
                             Fill: =RGBA(0, 0, 0, 0)
@@ -766,21 +659,15 @@
                             ZIndex: =1
 
                             Rectangle2 As rectangle:
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                DisabledFill: =RGBA(161, 159, 157, 1)
-                                Fill: =RGBA(0, 120, 212, 1)
-                                FocusedBorderThickness: =4
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Fill: =App.Theme.Colors.Primary
                                 Height: =6
-                                HoverFill: =RGBA(0, 120, 212, 1)
-                                PressedFill: =RGBA(0, 120, 212, 1)
                                 Width: =Parent.Width
                                 Y: =25
                                 ZIndex: =1
 
                         "'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)_DataCard1' As typedDataCard.textualEditCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)"
                             Default: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)'
@@ -798,17 +685,10 @@
 
                             DataCardKey7 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =34
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
                                 Width: =Parent.Width - 60
@@ -820,23 +700,20 @@
                             DataCardValue7 As text:
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                                 BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
+                                Color: =RGBA(0, 0, 0, 1)
                                 Default: =Parent.Default
                                 DelayOutput: =true
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                DisabledFill: =RGBA(242, 242, 241, 0)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayMode: =Parent.DisplayMode
                                 FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                HoverBorderColor: =RGBA(16, 110, 190, 1)
-                                HoverColor: =RGBA(50, 49, 48, 1)
-                                HoverFill: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                HoverBorderColor: =App.Theme.Colors.Darker40
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =App.Theme.Colors.Lighter70
                                 MaxLength: =Parent.MaxLength
                                 PaddingLeft: =5
-                                PressedBorderColor: =RGBA(0, 120, 212, 1)
-                                PressedColor: =RGBA(50, 49, 48, 1)
-                                PressedFill: =RGBA(255, 255, 255, 1)
                                 RadiusBottomLeft: =0
                                 RadiusBottomRight: =0
                                 RadiusTopLeft: =0
@@ -850,14 +727,9 @@
 
                             ErrorMessage3 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
                                 Color: =RGBA(168, 0, 0, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(168, 0, 0, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 FontWeight: =FontWeight.Semibold
                                 Height: =10
                                 Live: =Live.Assertive
@@ -865,7 +737,6 @@
                                 PaddingLeft: =0
                                 PaddingRight: =0
                                 PaddingTop: =0
-                                Size: =13
                                 Text: =Parent.Error
                                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                                 Width: =Parent.Width - 60
@@ -875,17 +746,10 @@
 
                             StarVisible3 As label:
                                 Align: =Align.Center
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =DataCardKey7.Height
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -895,7 +759,7 @@
                                 ZIndex: =4
 
                         "'EXISTING STRATEGY ANNUALIZED COST OPEX ($)_DataCard1' As typedDataCard.textualEditCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="EXISTING STRATEGY ANNUALIZED COST OPEX ($)"
                             Default: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST OPEX ($)'
@@ -913,17 +777,10 @@
 
                             DataCardKey8 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =34
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
                                 Width: =Parent.Width - 60
@@ -935,23 +792,20 @@
                             DataCardValue8 As text:
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                                 BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
+                                Color: =RGBA(0, 0, 0, 1)
                                 Default: =Parent.Default
                                 DelayOutput: =true
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                DisabledFill: =RGBA(242, 242, 241, 0)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayMode: =Parent.DisplayMode
                                 FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                HoverBorderColor: =RGBA(16, 110, 190, 1)
-                                HoverColor: =RGBA(50, 49, 48, 1)
-                                HoverFill: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                HoverBorderColor: =App.Theme.Colors.Darker40
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =App.Theme.Colors.Lighter70
                                 MaxLength: =Parent.MaxLength
                                 PaddingLeft: =5
-                                PressedBorderColor: =RGBA(0, 120, 212, 1)
-                                PressedColor: =RGBA(50, 49, 48, 1)
-                                PressedFill: =RGBA(255, 255, 255, 1)
                                 RadiusBottomLeft: =0
                                 RadiusBottomRight: =0
                                 RadiusTopLeft: =0
@@ -965,14 +819,9 @@
 
                             ErrorMessage4 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
                                 Color: =RGBA(168, 0, 0, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(168, 0, 0, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 FontWeight: =FontWeight.Semibold
                                 Height: =10
                                 Live: =Live.Assertive
@@ -980,7 +829,6 @@
                                 PaddingLeft: =0
                                 PaddingRight: =0
                                 PaddingTop: =0
-                                Size: =13
                                 Text: =Parent.Error
                                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                                 Width: =Parent.Width - 60
@@ -990,17 +838,10 @@
 
                             StarVisible4 As label:
                                 Align: =Align.Center
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =DataCardKey8.Height
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1010,7 +851,7 @@
                                 ZIndex: =4
 
                         "'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)_DataCard1' As typedDataCard.textualEditCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="EXISTING STRATEGY ANNUALIZED COST TOTAL ($)"
                             Default: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)'
@@ -1028,17 +869,10 @@
 
                             DataCardKey9 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =34
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
                                 Width: =Parent.Width - 60
@@ -1050,23 +884,20 @@
                             DataCardValue9 As text:
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                                 BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
+                                Color: =RGBA(0, 0, 0, 1)
                                 Default: =Parent.Default
                                 DelayOutput: =true
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                DisabledFill: =RGBA(242, 242, 241, 0)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayMode: =Parent.DisplayMode
                                 FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                HoverBorderColor: =RGBA(16, 110, 190, 1)
-                                HoverColor: =RGBA(50, 49, 48, 1)
-                                HoverFill: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                HoverBorderColor: =App.Theme.Colors.Darker40
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =App.Theme.Colors.Lighter70
                                 MaxLength: =Parent.MaxLength
                                 PaddingLeft: =5
-                                PressedBorderColor: =RGBA(0, 120, 212, 1)
-                                PressedColor: =RGBA(50, 49, 48, 1)
-                                PressedFill: =RGBA(255, 255, 255, 1)
                                 RadiusBottomLeft: =0
                                 RadiusBottomRight: =0
                                 RadiusTopLeft: =0
@@ -1080,14 +911,9 @@
 
                             ErrorMessage5 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
                                 Color: =RGBA(168, 0, 0, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(168, 0, 0, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 FontWeight: =FontWeight.Semibold
                                 Height: =10
                                 Live: =Live.Assertive
@@ -1095,7 +921,6 @@
                                 PaddingLeft: =0
                                 PaddingRight: =0
                                 PaddingTop: =0
-                                Size: =13
                                 Text: =Parent.Error
                                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                                 Width: =Parent.Width - 60
@@ -1105,17 +930,10 @@
 
                             StarVisible5 As label:
                                 Align: =Align.Center
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =DataCardKey9.Height
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1125,7 +943,7 @@
                                 ZIndex: =4
 
                         "'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)_DataCard1' As typedDataCard.textualEditCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="EXISTING STRATEGY ANNUALIZED HOURS (HOURS)"
                             Default: =ThisItem.'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)'
@@ -1143,17 +961,10 @@
 
                             DataCardKey10 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =34
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
                                 Width: =Parent.Width - 60
@@ -1165,23 +976,20 @@
                             DataCardValue10 As text:
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                                 BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
+                                Color: =RGBA(0, 0, 0, 1)
                                 Default: =Parent.Default
                                 DelayOutput: =true
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                DisabledFill: =RGBA(242, 242, 241, 0)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayMode: =Parent.DisplayMode
                                 FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                HoverBorderColor: =RGBA(16, 110, 190, 1)
-                                HoverColor: =RGBA(50, 49, 48, 1)
-                                HoverFill: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                HoverBorderColor: =App.Theme.Colors.Darker40
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =App.Theme.Colors.Lighter70
                                 MaxLength: =Parent.MaxLength
                                 PaddingLeft: =5
-                                PressedBorderColor: =RGBA(0, 120, 212, 1)
-                                PressedColor: =RGBA(50, 49, 48, 1)
-                                PressedFill: =RGBA(255, 255, 255, 1)
                                 RadiusBottomLeft: =0
                                 RadiusBottomRight: =0
                                 RadiusTopLeft: =0
@@ -1195,14 +1003,9 @@
 
                             ErrorMessage6 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
                                 Color: =RGBA(168, 0, 0, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(168, 0, 0, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 FontWeight: =FontWeight.Semibold
                                 Height: =10
                                 Live: =Live.Assertive
@@ -1210,7 +1013,6 @@
                                 PaddingLeft: =0
                                 PaddingRight: =0
                                 PaddingTop: =0
-                                Size: =13
                                 Text: =Parent.Error
                                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                                 Width: =Parent.Width - 60
@@ -1220,17 +1022,10 @@
 
                             StarVisible6 As label:
                                 Align: =Align.Center
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =DataCardKey10.Height
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1240,7 +1035,7 @@
                                 ZIndex: =4
 
                         "'EXISTING STRATEGY RESIDUAL RISK_DataCard1' As typedDataCard.textualEditCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="EXISTING STRATEGY RESIDUAL RISK"
                             Default: =ThisItem.'EXISTING STRATEGY RESIDUAL RISK'
@@ -1258,17 +1053,10 @@
 
                             DataCardKey11 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =34
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
                                 Width: =Parent.Width - 60
@@ -1280,23 +1068,20 @@
                             DataCardValue11 As text:
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                                 BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
+                                Color: =RGBA(0, 0, 0, 1)
                                 Default: =Parent.Default
                                 DelayOutput: =true
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                DisabledFill: =RGBA(242, 242, 241, 0)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayMode: =Parent.DisplayMode
                                 FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                HoverBorderColor: =RGBA(16, 110, 190, 1)
-                                HoverColor: =RGBA(50, 49, 48, 1)
-                                HoverFill: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                HoverBorderColor: =App.Theme.Colors.Darker40
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =App.Theme.Colors.Lighter70
                                 MaxLength: =Parent.MaxLength
                                 PaddingLeft: =5
-                                PressedBorderColor: =RGBA(0, 120, 212, 1)
-                                PressedColor: =RGBA(50, 49, 48, 1)
-                                PressedFill: =RGBA(255, 255, 255, 1)
                                 RadiusBottomLeft: =0
                                 RadiusBottomRight: =0
                                 RadiusTopLeft: =0
@@ -1310,14 +1095,9 @@
 
                             ErrorMessage7 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
                                 Color: =RGBA(168, 0, 0, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(168, 0, 0, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 FontWeight: =FontWeight.Semibold
                                 Height: =10
                                 Live: =Live.Assertive
@@ -1325,7 +1105,6 @@
                                 PaddingLeft: =0
                                 PaddingRight: =0
                                 PaddingTop: =0
-                                Size: =13
                                 Text: =Parent.Error
                                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                                 Width: =Parent.Width - 60
@@ -1335,17 +1114,10 @@
 
                             StarVisible7 As label:
                                 Align: =Align.Center
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =DataCardKey11.Height
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1355,7 +1127,7 @@
                                 ZIndex: =4
 
                         "'EXISTING STRATEGY ROI ($)_DataCard1' As typedDataCard.textualEditCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="EXISTING STRATEGY ROI ($)"
                             Default: =ThisItem.'EXISTING STRATEGY ROI ($)'
@@ -1373,17 +1145,10 @@
 
                             DataCardKey12 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =34
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
                                 Width: =Parent.Width - 60
@@ -1395,23 +1160,20 @@
                             DataCardValue12 As text:
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                                 BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
+                                Color: =RGBA(0, 0, 0, 1)
                                 Default: =Parent.Default
                                 DelayOutput: =true
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                DisabledFill: =RGBA(242, 242, 241, 0)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayMode: =Parent.DisplayMode
                                 FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                HoverBorderColor: =RGBA(16, 110, 190, 1)
-                                HoverColor: =RGBA(50, 49, 48, 1)
-                                HoverFill: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                HoverBorderColor: =App.Theme.Colors.Darker40
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =App.Theme.Colors.Lighter70
                                 MaxLength: =Parent.MaxLength
                                 PaddingLeft: =5
-                                PressedBorderColor: =RGBA(0, 120, 212, 1)
-                                PressedColor: =RGBA(50, 49, 48, 1)
-                                PressedFill: =RGBA(255, 255, 255, 1)
                                 RadiusBottomLeft: =0
                                 RadiusBottomRight: =0
                                 RadiusTopLeft: =0
@@ -1425,14 +1187,9 @@
 
                             ErrorMessage8 As label:
                                 AutoHeight: =true
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
                                 Color: =RGBA(168, 0, 0, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(168, 0, 0, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 FontWeight: =FontWeight.Semibold
                                 Height: =10
                                 Live: =Live.Assertive
@@ -1440,7 +1197,6 @@
                                 PaddingLeft: =0
                                 PaddingRight: =0
                                 PaddingTop: =0
-                                Size: =13
                                 Text: =Parent.Error
                                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                                 Width: =Parent.Width - 60
@@ -1450,17 +1206,10 @@
 
                             StarVisible8 As label:
                                 Align: =Align.Center
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                Color: =RGBA(50, 49, 48, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                DisabledColor: =RGBA(161, 159, 157, 1)
-                                FocusedBorderThickness: =4
-                                Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                Color: =App.Theme.Colors.Darker30
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
                                 Height: =DataCardKey12.Height
-                                PaddingLeft: =0
                                 Size: =13
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1487,20 +1236,17 @@
                 ConfirmDeletionLabel1 As label:
                     Align: =Align.Center
                     AlignInContainer: =AlignInContainer.Stretch
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(50, 49, 48, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
                     FillPortions: =1
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
+                    Font: =App.Theme.Font
                     Size: =13
                     Text: ="Are you sure you want to delete this record?"
                     ZIndex: =26
 
                 ConfirmDeleteButtonBarContainer1 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
                     LayoutGap: =15
                     LayoutJustifyContent: =LayoutJustifyContent.Center
                     LayoutMinHeight: =100
@@ -1514,51 +1260,41 @@
                     ZIndex: =27
 
                     CancelDeleteButton1 As button:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(161, 159, 157, 1)
-                        DisabledFill: =RGBA(242, 242, 241, 0)
-                        Fill: =RGBA(0, 120, 212, 1)
-                        Font: =Font.'Segoe UI'
+                        BorderColor: =App.Theme.Colors.Primary
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =App.Theme.Colors.Primary
+                        Font: =App.Theme.Font
                         FontWeight: =FontWeight.Semibold
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverBorderColor: =App.Theme.Colors.Darker10
                         HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(16, 110, 190, 1)
+                        HoverFill: =App.Theme.Colors.Darker10
                         OnSelect: |-
                             =UpdateContext({ deleteMode: false, deleteCancelled: true })
-                        PressedBorderColor: =RGBA(0, 69, 120, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(16, 110, 190, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =App.Theme.Colors.Darker40
                         Size: =15
                         Text: ="Cancel"
                         ZIndex: =28
 
                     ConfirmDeleteButton1 As button:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(161, 159, 157, 1)
-                        DisabledFill: =RGBA(242, 242, 241, 0)
-                        Fill: =RGBA(0, 120, 212, 1)
-                        Font: =Font.'Segoe UI'
+                        BorderColor: =App.Theme.Colors.Primary
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =App.Theme.Colors.Primary
+                        Font: =App.Theme.Font
                         FontWeight: =FontWeight.Semibold
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverBorderColor: =App.Theme.Colors.Darker10
                         HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(16, 110, 190, 1)
+                        HoverFill: =App.Theme.Colors.Darker10
                         OnSelect: |-
                             =Remove([@PowerAppsTesting], selectedRecord); If(IsEmpty(Errors([@PowerAppsTesting], selectedRecord)), UpdateContext( { CurrentItem: First([@PowerAppsTesting]), itemSelected: false, editMode: false, newMode: false, deleteMode: false }));
-                        PressedBorderColor: =RGBA(0, 69, 120, 1)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(16, 110, 190, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =App.Theme.Colors.Darker40
                         Size: =15
                         Text: ="Delete"
                         ZIndex: =29
