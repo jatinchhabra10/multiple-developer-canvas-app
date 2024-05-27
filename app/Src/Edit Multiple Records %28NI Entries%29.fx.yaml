@@ -643,3 +643,13 @@
         Y: =700
         ZIndex: =2
 
+    "'Clear Selection' As Button":
+        DisplayMode: =DisplayMode.Edit
+        Height: =40
+        OnSelect: =ClearCollect(colData, {})
+        Text: ="Clear Selection"
+        Width: =100
+        X: =285
+        Y: =210
+        ZIndex: =3
+
