@@ -358,7 +358,7 @@
                         Height: =32
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
-                        Text: ="Large Scale Data Update"
+                        Text: ="Large Scale Data "
                         Width: =Parent.Width
                         X: =0
                         Y: =0
