@@ -1,4 +1,4 @@
-"'Existing Strategy Tableview' As screen.'autoLayout_HeaderFooter_ver1.0'":
+"'Existing Strategy Table View' As screen.'autoLayout_HeaderFooter_ver1.0'":
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     ScreenContainer3 As groupContainer.verticalAutoLayoutContainer:
