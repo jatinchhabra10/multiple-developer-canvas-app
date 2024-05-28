@@ -65,17 +65,77 @@
             RadiusTopRight: =8
             ZIndex: =3
 
-            BadgeCanvas2 As Badge:
-                AlignInContainer: =AlignInContainer.Stretch
-                Content: =""
-                DisplayMode: =DisplayMode.Edit
-                Height: =32
-                LayoutMinHeight: =32
-                LayoutMinWidth: =32
-                Width: =1325
-                X: =0
-                Y: =0
-                ZIndex: =2
+            Container3 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =30
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =1
+
+                TextCanvas5 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Asset Tag"
+                    Width: =96
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                TextCanvas6 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="Annual Capex"
+                    Width: =138
+                    X: =96
+                    Y: =0
+                    ZIndex: =2
+
+                TextCanvas6_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: ="Annual Opex"
+                    Width: =193
+                    X: =234
+                    Y: =0
+                    ZIndex: =3
+
+                TextCanvas6_2 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: ="Annual Total Costs"
+                    Width: =193
+                    X: =427
+                    Y: =0
+                    ZIndex: =4
+
+                TextCanvas6_3 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: |-
+                        ="Annual Labour Hours
+                        "
+                    Width: =141
+                    X: =620
+                    Y: =0
+                    ZIndex: =5
+
+                TextCanvas6_4 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: ="ROI"
+                    Width: =141
+                    X: =761
+                    Y: =0
+                    ZIndex: =6
 
             Gallery1 As gallery.galleryVertical:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -89,7 +149,7 @@
                 TemplatePadding: =0
                 TemplateSize: =30
                 Width: =MainContainer3.Width
-                ZIndex: =3
+                ZIndex: =2
 
                 AssetTag As Text:
                     DisplayMode: =DisplayMode.Edit
@@ -208,6 +268,7 @@
                                 'EXISTING STRATEGY ROI ($)': txtExROI.Value
                             }
                         )
+                    Visible: =false
                     Width: =82
                     X: =1252
                     Y: =0
@@ -238,7 +299,7 @@
                 Width: =96
                 X: =0
                 Y: =0
-                ZIndex: =4
+                ZIndex: =3
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.Light

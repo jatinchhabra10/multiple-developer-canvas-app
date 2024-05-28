@@ -27,21 +27,6 @@
     "OverridableProperties": {},
     "Version": "2.3.0"
   },
-  "Badge": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_BadgeCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_BadgeCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Badge",
-    "Version": "0.0.18"
-  },
   "button": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
