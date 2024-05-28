@@ -680,7 +680,9 @@
             ZIndex: =1
 
     ButtonCanvas3 As Button:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =32
         OnSelect: =SubmitForm('Editing Form')
         Text: ="Confirm"

@@ -36,7 +36,9 @@
             ZIndex: =2
 
             Header2 As Header:
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =75
                 LayoutMinHeight: =75
                 LayoutMinWidth: =Parent.Width
@@ -63,19 +65,35 @@
             RadiusTopRight: =8
             ZIndex: =3
 
+            BadgeCanvas2 As Badge:
+                AlignInContainer: =AlignInContainer.Stretch
+                Content: =""
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =32
+                Width: =1325
+                X: =0
+                Y: =0
+                ZIndex: =2
+
             Gallery1 As gallery.galleryVertical:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =App.Theme.Colors.Darker40
                 DelayItemLoading: =true
                 Items: =PowerAppsTesting
                 Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =30
                 Width: =MainContainer3.Width
-                ZIndex: =1
+                ZIndex: =3
 
                 AssetTag As Text:
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =32
                     Text: =ThisItem.'ASSET TAG'
                     Width: =96
@@ -84,7 +102,9 @@
                     ZIndex: =1
 
                 "txtExAnnualCapex As 'Text input'":
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =32
                     OnChange: =Select(ButtonCanvas2)
                     Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)'
@@ -94,7 +114,9 @@
                     ZIndex: =2
 
                 "txtExAnnualOpex As 'Text input'":
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =32
                     OnChange: =Select(ButtonCanvas2)
                     Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST OPEX ($)'
@@ -104,7 +126,9 @@
                     ZIndex: =3
 
                 "txtExAnnualTotal As 'Text input'":
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =32
                     OnChange: =Select(ButtonCanvas2)
                     Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)'
@@ -114,7 +138,9 @@
                     ZIndex: =4
 
                 "txtExAnnualHours As 'Text input'":
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =32
                     OnChange: =Select(ButtonCanvas2)
                     Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)'
@@ -124,7 +150,9 @@
                     ZIndex: =5
 
                 "txtExROI As 'Text input'":
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =32
                     OnChange: =Select(ButtonCanvas2)
                     Value: =ThisItem.'EXISTING STRATEGY ROI ($)'
@@ -152,7 +180,9 @@
                         ZIndex: =8
 
                 ButtonCanvas2 As Button:
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =30
                     OnSelect: |-
                         =If(
@@ -182,6 +212,33 @@
                     X: =1252
                     Y: =0
                     ZIndex: =8
+
+            ButtonCanvas4 As Button:
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: |-
+                    =Patch(
+                        PowerAppsTesting,
+                        ShowColumns(
+                            colGridUpdates,
+                            'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)',
+                            'EXISTING STRATEGY ANNUALIZED COST OPEX ($)',
+                            'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)',
+                            'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)',
+                            'EXISTING STRATEGY RESIDUAL RISK',
+                            'EXISTING STRATEGY ROI ($)',
+                            __PowerAppsId__
+                        )
+                    );
+                    Notify("Updated Successfully",NotificationType.Success,3000);
+                    Clear(colGridUpdates)
+                Text: ="Save"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =4
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.Light
