@@ -134,19 +134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.Container2.Form2.'DUE DATE_DataCard1'.HourValue1.AccessibleLabel"
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.Container2.'Editing Form'.'DUE DATE_DataCard1'.HourValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.Container2.Form2.'DUE DATE_DataCard1'.HourValue1.AccessibleLabel",
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.Container2.'Editing Form'.'DUE DATE_DataCard1'.HourValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.Container2.Form2.'DUE DATE_DataCard1'.HourValue1"
+                "type": "'Edit Multiple Records (NI Entries)'.Container2.'Editing Form'.'DUE DATE_DataCard1'.HourValue1"
               }
             }
           ],
@@ -164,19 +164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.Container2.Form2.'DUE DATE_DataCard1'.MinuteValue1.AccessibleLabel"
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.Container2.'Editing Form'.'DUE DATE_DataCard1'.MinuteValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.Container2.Form2.'DUE DATE_DataCard1'.MinuteValue1.AccessibleLabel",
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.Container2.'Editing Form'.'DUE DATE_DataCard1'.MinuteValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.Container2.Form2.'DUE DATE_DataCard1'.MinuteValue1"
+                "type": "'Edit Multiple Records (NI Entries)'.Container2.'Editing Form'.'DUE DATE_DataCard1'.MinuteValue1"
               }
             }
           ],
@@ -1707,6 +1707,66 @@
                 "member": "AccessibleLabel",
                 "module": "Existing Strategy Baseline",
                 "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ROI ($)_DataCard1'.DataCardValue12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ButtonCanvas3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ButtonCanvas3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ButtonCanvas3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ButtonCanvas3_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ButtonCanvas3_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ButtonCanvas3_1"
               }
             }
           ],
