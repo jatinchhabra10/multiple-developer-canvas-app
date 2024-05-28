@@ -14,6 +14,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 97,
+                  "snippet": {
+                    "text": "||"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Or"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.Items"
                 }
               ],
@@ -94,40 +134,540 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.Items"
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.Items",
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1.AccessibleLabel",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 97,
-                  "snippet": {
-                    "text": "||"
-                  }
                 }
               },
               "properties": {
-                "member": "Items",
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.SearchContainer1.SearchInput1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.SearchContainer1.SearchInput1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.SearchContainer1.SearchInput1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
                 "module": "Existing Strategy Baseline",
                 "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1"
               }
             }
           ],
           "message": {
-            "arguments": [
-              "Or"
-            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.BackIconButton1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.BackIconButton1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.BackIconButton1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.SubmitFormButton1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.SubmitFormButton1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.SubmitFormButton1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.ResetFormButton1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.ResetFormButton1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.ResetFormButton1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.EditIconButton1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.EditIconButton1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.EditIconButton1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.DeleteIconButton1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.DeleteIconButton1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.DeleteIconButton1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)_DataCard1'.DataCardValue7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)_DataCard1'.DataCardValue7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)_DataCard1'.DataCardValue7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST OPEX ($)_DataCard1'.DataCardValue8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST OPEX ($)_DataCard1'.DataCardValue8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST OPEX ($)_DataCard1'.DataCardValue8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)_DataCard1'.DataCardValue9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)_DataCard1'.DataCardValue9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)_DataCard1'.DataCardValue9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)_DataCard1'.DataCardValue10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)_DataCard1'.DataCardValue10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)_DataCard1'.DataCardValue10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY RESIDUAL RISK_DataCard1'.DataCardValue11.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY RESIDUAL RISK_DataCard1'.DataCardValue11.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY RESIDUAL RISK_DataCard1'.DataCardValue11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ROI ($)_DataCard1'.DataCardValue12.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ROI ($)_DataCard1'.DataCardValue12.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ROI ($)_DataCard1'.DataCardValue12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1184,19 +1724,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1.AccessibleLabel"
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1.AccessibleLabel",
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1"
+                "module": "Existing Strategy Table View",
+                "type": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1"
               }
             }
           ],
@@ -1214,19 +1754,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1.TabIndex"
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1.TabIndex",
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.TableNameContainer1.Arrow1"
+                "module": "Existing Strategy Table View",
+                "type": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1"
               }
             }
           ],
@@ -1244,19 +1784,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.SearchContainer1.SearchInput1.AccessibleLabel"
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExROI.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.SearchContainer1.SearchInput1.AccessibleLabel",
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExROI.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.SearchContainer1.SearchInput1"
+                "module": "Existing Strategy Table View",
+                "type": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExROI"
               }
             }
           ],
@@ -1274,19 +1814,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.AccessibleLabel"
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualHours.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.AccessibleLabel",
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualHours.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1"
+                "module": "Existing Strategy Table View",
+                "type": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualHours"
               }
             }
           ],
@@ -1304,49 +1844,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.TabIndex"
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualTotal.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.AccessibleLabel",
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualTotal.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1"
+                "module": "Existing Strategy Table View",
+                "type": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualTotal"
               }
             }
           ],
@@ -1364,49 +1874,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.TabIndex"
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualOpex.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.BackIconButton1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.BackIconButton1.AccessibleLabel",
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualOpex.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.BackIconButton1"
+                "module": "Existing Strategy Table View",
+                "type": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualOpex"
               }
             }
           ],
@@ -1424,19 +1904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.SubmitFormButton1.AccessibleLabel"
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualCapex.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.SubmitFormButton1.AccessibleLabel",
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualCapex.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.SubmitFormButton1"
+                "module": "Existing Strategy Table View",
+                "type": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.txtExAnnualCapex"
               }
             }
           ],
@@ -1454,19 +1934,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.ResetFormButton1.AccessibleLabel"
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.DropdownCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.ResetFormButton1.AccessibleLabel",
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.DropdownCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.ResetFormButton1"
+                "module": "Existing Strategy Table View",
+                "type": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.DropdownCanvas1"
               }
             }
           ],
@@ -1484,19 +1964,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.EditIconButton1.AccessibleLabel"
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.ButtonCanvas2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.EditIconButton1.AccessibleLabel",
+                  "fullyQualifiedName": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.ButtonCanvas2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.EditIconButton1"
+                "module": "Existing Strategy Table View",
+                "type": "'Existing Strategy Table View'.ScreenContainer3.MainContainer3.Gallery1.ButtonCanvas2"
               }
             }
           ],
@@ -1514,19 +1994,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.DeleteIconButton1.AccessibleLabel"
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.CurrentItem"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.DeleteIconButton1.AccessibleLabel",
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.CurrentItem",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "CurrentItem",
                 "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.DeleteIconButton1"
+                "type": "'Existing Strategy Baseline'"
               }
             }
           ],
@@ -1536,27 +2016,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)_DataCard1'.DataCardValue7.AccessibleLabel"
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.deleteCancelled"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)_DataCard1'.DataCardValue7.AccessibleLabel",
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.deleteCancelled",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "deleteCancelled",
                 "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)_DataCard1'.DataCardValue7"
+                "type": "'Existing Strategy Baseline'"
               }
             }
           ],
@@ -1566,158 +2046,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST OPEX ($)_DataCard1'.DataCardValue8.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST OPEX ($)_DataCard1'.DataCardValue8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST OPEX ($)_DataCard1'.DataCardValue8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)_DataCard1'.DataCardValue9.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)_DataCard1'.DataCardValue9.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)_DataCard1'.DataCardValue9"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)_DataCard1'.DataCardValue10.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)_DataCard1'.DataCardValue10.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)_DataCard1'.DataCardValue10"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY RESIDUAL RISK_DataCard1'.DataCardValue11.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY RESIDUAL RISK_DataCard1'.DataCardValue11.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY RESIDUAL RISK_DataCard1'.DataCardValue11"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ROI ($)_DataCard1'.DataCardValue12.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ROI ($)_DataCard1'.DataCardValue12.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.'EXISTING STRATEGY ROI ($)_DataCard1'.DataCardValue12"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1827,66 +2157,6 @@
                 "member": "deleteCancelled",
                 "module": "Edit Multiple Records",
                 "type": "'Edit Multiple Records'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.CurrentItem"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.CurrentItem",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "CurrentItem",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.deleteCancelled"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.deleteCancelled",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "deleteCancelled",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'"
               }
             }
           ],
