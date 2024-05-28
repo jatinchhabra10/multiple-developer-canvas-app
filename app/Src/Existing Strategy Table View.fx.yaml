@@ -68,7 +68,7 @@
             Container3 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
                 FillPortions: =0
-                Height: =30
+                Height: =100
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 RadiusBottomLeft: =4
@@ -84,7 +84,7 @@
                     Text: ="Asset Tag"
                     Width: =96
                     X: =0
-                    Y: =0
+                    Y: =68
                     ZIndex: =1
 
                 TextCanvas6 As Text:
@@ -94,7 +94,7 @@
                     Text: ="Annual Capex"
                     Width: =138
                     X: =96
-                    Y: =0
+                    Y: =70
                     ZIndex: =2
 
                 TextCanvas6_1 As Text:
@@ -104,7 +104,7 @@
                     Text: ="Annual Opex"
                     Width: =193
                     X: =234
-                    Y: =0
+                    Y: =68
                     ZIndex: =3
 
                 TextCanvas6_2 As Text:
@@ -114,7 +114,7 @@
                     Text: ="Annual Total Costs"
                     Width: =193
                     X: =427
-                    Y: =0
+                    Y: =68
                     ZIndex: =4
 
                 TextCanvas6_3 As Text:
@@ -126,7 +126,7 @@
                         "
                     Width: =141
                     X: =620
-                    Y: =0
+                    Y: =70
                     ZIndex: =5
 
                 TextCanvas6_4 As Text:
@@ -136,7 +136,7 @@
                     Text: ="ROI"
                     Width: =141
                     X: =761
-                    Y: =0
+                    Y: =68
                     ZIndex: =6
 
             Gallery1 As gallery.galleryVertical:

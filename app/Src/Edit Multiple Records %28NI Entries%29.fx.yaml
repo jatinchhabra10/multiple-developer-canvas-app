@@ -997,7 +997,9 @@
         ButtonCanvas5 As Button:
             AccessibleLabel: ="Discard"
             Appearance: ='ButtonCanvas.Appearance'.Primary
+            BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
+            FontColor: =
             Height: =31
             OnSelect: =Set(showDiscardAndContainer, false);
             Text: ="Discard"
@@ -1009,7 +1011,9 @@
             ZIndex: =1
 
         Save As Button:
+            BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
+            FontColor: =
             Height: =31
             OnSelect: =SubmitForm('Editing Form') 
             Text: ="Save"
