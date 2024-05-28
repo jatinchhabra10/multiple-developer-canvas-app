@@ -2,3 +2,316 @@
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
+    ScreenContainer3 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer2 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =2
+
+            Header2 As Header:
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =75
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                OnSelectLogo: =false
+                Title: =App.ActiveScreen.Name
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+        MainContainer3 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =3
+
+            Container3 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =30
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =1
+
+                TextCanvas5 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Asset Tag"
+                    Width: =96
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                TextCanvas6 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="Annual Capex"
+                    Width: =138
+                    X: =96
+                    Y: =0
+                    ZIndex: =2
+
+                TextCanvas6_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: ="Annual Opex"
+                    Width: =193
+                    X: =234
+                    Y: =0
+                    ZIndex: =3
+
+                TextCanvas6_2 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: ="Annual Total Costs"
+                    Width: =193
+                    X: =427
+                    Y: =0
+                    ZIndex: =4
+
+                TextCanvas6_3 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: |-
+                        ="Annual Labour Hours
+                        "
+                    Width: =141
+                    X: =620
+                    Y: =0
+                    ZIndex: =5
+
+                TextCanvas6_4 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: ="ROI"
+                    Width: =141
+                    X: =761
+                    Y: =0
+                    ZIndex: =6
+
+            Gallery1 As gallery.galleryVertical:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =App.Theme.Colors.Darker40
+                DelayItemLoading: =true
+                Items: =PowerAppsTesting
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =30
+                Width: =MainContainer3.Width
+                ZIndex: =2
+
+                AssetTag As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =32
+                    Text: =ThisItem.'ASSET TAG'
+                    Width: =96
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                "txtExAnnualCapex As 'Text input'":
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =32
+                    OnChange: =Select(ButtonCanvas2)
+                    Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)'
+                    Width: =122
+                    X: =96
+                    Y: =0
+                    ZIndex: =2
+
+                "txtExAnnualOpex As 'Text input'":
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =32
+                    OnChange: =Select(ButtonCanvas2)
+                    Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST OPEX ($)'
+                    Width: =198
+                    X: =218
+                    Y: =0
+                    ZIndex: =3
+
+                "txtExAnnualTotal As 'Text input'":
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =32
+                    OnChange: =Select(ButtonCanvas2)
+                    Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)'
+                    Width: =205
+                    X: =416
+                    Y: =0
+                    ZIndex: =4
+
+                "txtExAnnualHours As 'Text input'":
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =32
+                    OnChange: =Select(ButtonCanvas2)
+                    Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)'
+                    Width: =121
+                    X: =621
+                    Y: =0
+                    ZIndex: =5
+
+                "txtExROI As 'Text input'":
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =32
+                    OnChange: =Select(ButtonCanvas2)
+                    Value: =ThisItem.'EXISTING STRATEGY ROI ($)'
+                    Width: =320
+                    X: =742
+                    Y: =0
+                    ZIndex: =6
+
+                DropdownCanvas1 As Dropdown.pcfdataset:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Items: =PowerAppsTesting
+                    OnChange: =Select(ButtonCanvas2)
+                    Width: =190
+                    X: =1062
+                    Y: =0
+                    ZIndex: =7
+
+                    "'REVISED STRATEGY RESIDUAL RISK1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="REVISED STRATEGY RESIDUAL RISK"
+                        FieldName: ="REVISED STRATEGY RESIDUAL RISK"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =1
+                        ZIndex: =8
+
+                ButtonCanvas2 As Button:
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    OnSelect: |-
+                        =If(
+                            IsBlank(
+                                LookUp(
+                                    colGridUpdates,
+                                    __PowerAppsId__ = ThisItem.__PowerAppsId__
+                                )
+                            ),
+                            Collect(
+                                colGridUpdates,
+                                ThisItem
+                            )
+                        );
+                        UpdateIf(
+                            colGridUpdates,
+                            __PowerAppsId__ = ThisItem.__PowerAppsId__,
+                            {
+                                'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)': txtExAnnualCapex.Value,
+                                'EXISTING STRATEGY ANNUALIZED COST OPEX ($)': txtExAnnualOpex.Value,
+                                'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)': txtExAnnualTotal.Value,
+                                'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)': txtExAnnualHours.Value,
+                                'EXISTING STRATEGY ROI ($)': txtExROI.Value
+                            }
+                        )
+                    Visible: =false
+                    Width: =82
+                    X: =1252
+                    Y: =0
+                    ZIndex: =8
+
+            ButtonCanvas4 As Button:
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: |-
+                    =Patch(
+                        PowerAppsTesting,
+                        ShowColumns(
+                            colGridUpdates,
+                            'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)',
+                            'EXISTING STRATEGY ANNUALIZED COST OPEX ($)',
+                            'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)',
+                            'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)',
+                            'EXISTING STRATEGY RESIDUAL RISK',
+                            'EXISTING STRATEGY ROI ($)',
+                            __PowerAppsId__
+                        )
+                    );
+                    Notify("Updated Successfully",NotificationType.Success,3000);
+                    Clear(colGridUpdates)
+                Text: ="Save"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+        FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =4
+
