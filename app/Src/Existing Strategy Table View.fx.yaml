@@ -79,6 +79,7 @@
 
                 TextCanvas5 As Text:
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =32
                     Text: ="Asset Tag"
                     Width: =96
@@ -88,6 +89,7 @@
 
                 TextCanvas6 As Text:
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =30
                     Text: ="Annual Capex"
                     Width: =138
@@ -275,7 +277,9 @@
                     ZIndex: =8
 
             ButtonCanvas4 As Button:
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96

@@ -33,6 +33,8 @@
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
+            Width: |
+                =400
             ZIndex: =2
 
             TableNameLabel1_3 As label:
@@ -73,11 +75,317 @@
             RadiusTopRight: =4
             ZIndex: =5
 
+            RightContainer1_3 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
+                FillPortions: =0
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =16
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =2
+                PaddingLeft: =2
+                PaddingRight: =2
+                PaddingTop: =2
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =If(Or(deleteMode, And('Edit Multiple Records (NI Entries)_1'.Size = ScreenSize.Small, !newMode, !editMode, !itemSelected)), false, true)
+                Width: |
+                    =
+                ZIndex: =1
+
+                SelectedRecordHeaderContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FillPortions: =0
+                    Height: =50
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =16
+
+                    BackIconButton1_3 As icon.Add:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =50
+                        Icon: =Icon.ChevronLeft
+                        OnSelect: |-
+                            =UpdateContext({ itemSelected: false })
+                        PaddingBottom: =12
+                        PaddingLeft: =12
+                        PaddingRight: =12
+                        PaddingTop: =12
+                        TabIndex: =0
+                        Visible: =If('Edit Multiple Records (NI Entries)_1'.Size = ScreenSize.Small, And(!editMode, !newMode, !deleteMode), false)
+                        Width: =50
+                        ZIndex: =1
+
+                    Label2_2 As label:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
+                        Size: =13
+                        Text: |-
+                            ="Number of Items Selected: " & CountRows(colData)
+                        Width: =250
+                        ZIndex: =2
+
+                    SelectedRecordTitle1_3 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FillPortions: =1
+                        Font: =App.Theme.Font
+                        Size: =13
+                        Text: =RecordsGallery1_3.Selected.'ACR - CONFIRMED'
+                        ZIndex: =3
+
+                    SubmitFormButton1_3 As icon:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =50
+                        Icon: =Icon.Check
+                        OnSelect: =
+                        PaddingBottom: =12
+                        PaddingLeft: =12
+                        PaddingRight: =12
+                        PaddingTop: =12
+                        TabIndex: =0
+                        Visible: =Or(editMode, newMode)
+                        Width: =50
+                        ZIndex: =4
+
+                    ResetFormButton1_3 As icon:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =50
+                        Icon: =Icon.Cancel
+                        OnSelect: |-
+                            =
+                            UpdateContext({ editMode: false, newMode: false });
+                        PaddingBottom: =12
+                        PaddingLeft: =12
+                        PaddingRight: =12
+                        PaddingTop: =12
+                        TabIndex: =0
+                        Visible: =Or(editMode, newMode)
+                        Width: =50
+                        ZIndex: =5
+
+                    EditIconButton1_3 As icon:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =50
+                        Icon: =Icon.Edit
+                        OnSelect: |-
+                            =UpdateContext({ editMode: true, selectedRecord: RecordsGallery1_3.Selected })
+                        PaddingBottom: =12
+                        PaddingLeft: =12
+                        PaddingRight: =12
+                        PaddingTop: =12
+                        TabIndex: =0
+                        Visible: =And(!editMode, !newMode, !deleteMode)
+                        Width: =50
+                        ZIndex: =6
+
+                    DeleteIconButton1_3 As icon:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Darker30
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =50
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =UpdateContext({ deleteMode: true, deleteCancelled: false, selectedRecord: RecordsGallery1_3.Selected })
+                        PaddingBottom: =12
+                        PaddingLeft: =12
+                        PaddingRight: =12
+                        PaddingTop: =12
+                        TabIndex: =0
+                        Visible: =And(!editMode, !newMode, !deleteMode)
+                        Width: =50
+                        ZIndex: =7
+
+                Table_1 As Table.pcfdataset:
+                    AlignInContainer: =AlignInContainer.Start
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                    Items: =colData
+                    LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                    LayoutMinWidth: |
+                        =
+                    onCellValueChange: =false
+                    onFilter: =false
+                    onNavigate: =false
+                    onRowSelect: =false
+                    onSave: =false
+                    OnSelect: =false
+                    Width: =
+                    X: =0
+                    Y: =0
+                    ZIndex: =17
+
+                    "'ASSET TAG1_1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="ASSET TAG"
+                        FieldName: ="ASSET TAG"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =1
+                        ZIndex: =30
+
+                    "'DUE DATE1_1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="DUE DATE"
+                        FieldName: ="DUE DATE"
+                        FieldType: ="d"
+                        FieldVariantName: ="textualColumn"
+                        Order: =2
+                        ZIndex: =31
+
+                    "'ACR - CONFIRMED1_1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="ACR - CONFIRMED"
+                        FieldName: ="ACR - CONFIRMED"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =3
+                        ZIndex: =32
+
+                    "'ACR - ORIGINAL1_1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="ACR - ORIGINAL"
+                        FieldName: ="ACR - ORIGINAL"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =4
+                        ZIndex: =33
+
+                    "'ASSIGNED TO1_1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="ASSIGNED TO"
+                        FieldName: ="ASSIGNED TO"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =5
+                        ZIndex: =34
+
+                    "'STRATEGY STAGE1_1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="STRATEGY STAGE"
+                        FieldName: ="STRATEGY STAGE"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =6
+                        ZIndex: =35
+
+                    "'TASK TITLE1_1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="TASK TITLE"
+                        FieldName: ="TASK TITLE"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =7
+                        ZIndex: =36
+
+            DeleteConfirmDialogContainer1_3 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
+                FillPortions: =7
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =If(deleteMode, true, false)
+                Width: =0
+                ZIndex: =2
+
+                ConfirmDeletionLabel1_3 As label:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Stretch
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FillPortions: =1
+                    Font: =App.Theme.Font
+                    Size: =13
+                    Text: ="Are you sure you want to delete this record?"
+                    ZIndex: =26
+
+                ConfirmDeleteButtonBarContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    LayoutGap: =15
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =27
+
+                    CancelDeleteButton1_3 As button:
+                        BorderColor: =App.Theme.Colors.Primary
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =App.Theme.Colors.Primary
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =App.Theme.Colors.Darker10
+                        OnSelect: |-
+                            =UpdateContext({ deleteMode: false, deleteCancelled: true })
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =App.Theme.Colors.Darker40
+                        Size: =15
+                        Text: ="Cancel"
+                        ZIndex: =28
+
+                    ConfirmDeleteButton1_3 As button:
+                        BorderColor: =App.Theme.Colors.Primary
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =App.Theme.Colors.Primary
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =App.Theme.Colors.Darker10
+                        OnSelect: |-
+                            =Remove([@PowerAppsTesting], selectedRecord); If(IsEmpty(Errors([@PowerAppsTesting], selectedRecord)), UpdateContext( { CurrentItem: First([@PowerAppsTesting]), itemSelected: false, editMode: false, newMode: false, deleteMode: false }));
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =App.Theme.Colors.Darker40
+                        Size: =15
+                        Text: ="Delete"
+                        ZIndex: =29
+
             SidebarContainer1_3 As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
                 Fill: =RGBA(255, 255, 255, 1)
                 FillPortions: |-
-                    =If(And('Edit Multiple Records (NI Entries)_1'.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), 0, 2
+                    =
+                    
                     
                     
                     
@@ -99,7 +407,11 @@
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
                 Visible: =If(And('Edit Multiple Records (NI Entries)_1'.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), false, true)
-                ZIndex: =6
+                Width: |+
+                    =250
+                    
+                    
+                ZIndex: =3
 
                 SearchContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
                     Fill: =RGBA(245, 245, 245, 1)
@@ -112,9 +424,9 @@
                     ZIndex: =7
 
                     SearchInput1_3 As text:
-                        BorderStyle: =BorderStyle.None
                         Default: =""
                         Fill: =RGBA(0, 0, 0, 0)
+                        FillPortions: =1
                         Height: |
                             =33
                         HintText: ="Search"
@@ -128,13 +440,19 @@
 
                     SearchIcon1_3 As icon:
                         Color: =App.Theme.Colors.Primary
-                        Height: =44
+                        Height: |+
+                            =40
+                            
+                            
                         Icon: =Icon.Search
+                        LayoutMinHeight: |
+                            =64
                         PaddingBottom: =10
                         PaddingLeft: =10
-                        PaddingRight: =10
+                        PaddingRight: |
+                            =10
                         PaddingTop: =10
-                        Width: =44
+                        Width: =40
                         ZIndex: =9
 
                     Label1_3 As label:
@@ -144,7 +462,7 @@
                         Font: =App.Theme.Font
                         Size: =13
                         Text: ="Placeholder for Filters"
-                        Width: =300
+                        Width: =250
                         ZIndex: =10
 
                     Checkbox1_2 As checkbox:
@@ -154,8 +472,9 @@
                         CheckmarkFill: =App.Theme.Colors.Primary
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =App.Theme.Font
+                        Height: =20
                         HoverColor: =App.Theme.Colors.Darker30
-                        Size: =13
+                        Size: =11
                         Text: ="Check All (Placeholder)"
                         Width: =Parent.Width
                         ZIndex: =11
@@ -301,309 +620,25 @@
                         Y: =23
                         ZIndex: =7
 
-            RightContainer1_3 As groupContainer.verticalAutoLayoutContainer:
+            Container6 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
                 FillPortions: =0
-                LayoutAlignItems: =LayoutAlignItems.Stretch
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutGap: =16
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =2
-                PaddingLeft: =2
-                PaddingRight: =2
-                PaddingTop: =2
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Visible: =If(Or(deleteMode, And('Edit Multiple Records (NI Entries)_1'.Size = ScreenSize.Small, !newMode, !editMode, !itemSelected)), false, true)
-                Width: |
-                    =1400
-                ZIndex: =15
+                Width: =850
+                ZIndex: =4
 
-                SelectedRecordHeaderContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
-                    DropShadow: =DropShadow.Light
-                    Fill: =RGBA(255, 255, 255, 1)
-                    FillPortions: =0
-                    Height: =50
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    RadiusBottomLeft: =4
-                    RadiusBottomRight: =4
-                    RadiusTopLeft: =4
-                    RadiusTopRight: =4
-                    ZIndex: =16
-
-                    BackIconButton1_3 As icon.Add:
-                        BorderColor: =App.Theme.Colors.Darker40
-                        Color: =App.Theme.Colors.Darker30
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =50
-                        Icon: =Icon.ChevronLeft
-                        OnSelect: |-
-                            =UpdateContext({ itemSelected: false })
-                        PaddingBottom: =12
-                        PaddingLeft: =12
-                        PaddingRight: =12
-                        PaddingTop: =12
-                        TabIndex: =0
-                        Visible: =If('Edit Multiple Records (NI Entries)_1'.Size = ScreenSize.Small, And(!editMode, !newMode, !deleteMode), false)
-                        Width: =50
-                        ZIndex: =1
-
-                    Label2_2 As label:
-                        BorderColor: =App.Theme.Colors.Darker40
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =App.Theme.Font
-                        Size: =13
-                        Text: |-
-                            ="Number of Items Selected: " & CountRows(colData)
-                        Width: =250
-                        ZIndex: =2
-
-                    SelectedRecordTitle1_3 As label:
-                        AlignInContainer: =AlignInContainer.Stretch
-                        BorderColor: =App.Theme.Colors.Darker40
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FillPortions: =1
-                        Font: =App.Theme.Font
-                        Size: =13
-                        Text: =RecordsGallery1_3.Selected.'ACR - CONFIRMED'
-                        ZIndex: =3
-
-                    SubmitFormButton1_3 As icon:
-                        BorderColor: =App.Theme.Colors.Darker40
-                        Color: =App.Theme.Colors.Darker30
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =50
-                        Icon: =Icon.Check
-                        OnSelect: =
-                        PaddingBottom: =12
-                        PaddingLeft: =12
-                        PaddingRight: =12
-                        PaddingTop: =12
-                        TabIndex: =0
-                        Visible: =Or(editMode, newMode)
-                        Width: =50
-                        ZIndex: =4
-
-                    ResetFormButton1_3 As icon:
-                        BorderColor: =App.Theme.Colors.Darker40
-                        Color: =App.Theme.Colors.Darker30
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =50
-                        Icon: =Icon.Cancel
-                        OnSelect: |-
-                            =
-                            UpdateContext({ editMode: false, newMode: false });
-                        PaddingBottom: =12
-                        PaddingLeft: =12
-                        PaddingRight: =12
-                        PaddingTop: =12
-                        TabIndex: =0
-                        Visible: =Or(editMode, newMode)
-                        Width: =50
-                        ZIndex: =5
-
-                    EditIconButton1_3 As icon:
-                        BorderColor: =App.Theme.Colors.Darker40
-                        Color: =App.Theme.Colors.Darker30
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =50
-                        Icon: =Icon.Edit
-                        OnSelect: |-
-                            =UpdateContext({ editMode: true, selectedRecord: RecordsGallery1_3.Selected })
-                        PaddingBottom: =12
-                        PaddingLeft: =12
-                        PaddingRight: =12
-                        PaddingTop: =12
-                        TabIndex: =0
-                        Visible: =And(!editMode, !newMode, !deleteMode)
-                        Width: =50
-                        ZIndex: =6
-
-                    DeleteIconButton1_3 As icon:
-                        BorderColor: =App.Theme.Colors.Darker40
-                        Color: =App.Theme.Colors.Darker30
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =50
-                        Icon: =Icon.Trash
-                        OnSelect: |-
-                            =UpdateContext({ deleteMode: true, deleteCancelled: false, selectedRecord: RecordsGallery1_3.Selected })
-                        PaddingBottom: =12
-                        PaddingLeft: =12
-                        PaddingRight: =12
-                        PaddingTop: =12
-                        TabIndex: =0
-                        Visible: =And(!editMode, !newMode, !deleteMode)
-                        Width: =50
-                        ZIndex: =7
-
-                Table_1 As Table.pcfdataset:
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
-                    Items: =colData
-                    LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
-                    LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
-                    onCellValueChange: =false
-                    onFilter: =false
-                    onNavigate: =false
-                    onRowSelect: =false
-                    onSave: =false
-                    OnSelect: =false
-                    Width: |
-                        =300
-                    X: =0
-                    Y: =0
-                    ZIndex: =17
-
-                    "'ASSET TAG1_1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="ASSET TAG"
-                        FieldName: ="ASSET TAG"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =1
-                        ZIndex: =30
-
-                    "'DUE DATE1_1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="DUE DATE"
-                        FieldName: ="DUE DATE"
-                        FieldType: ="d"
-                        FieldVariantName: ="textualColumn"
-                        Order: =2
-                        ZIndex: =31
-
-                    "'ACR - CONFIRMED1_1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="ACR - CONFIRMED"
-                        FieldName: ="ACR - CONFIRMED"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =3
-                        ZIndex: =32
-
-                    "'ACR - ORIGINAL1_1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="ACR - ORIGINAL"
-                        FieldName: ="ACR - ORIGINAL"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =4
-                        ZIndex: =33
-
-                    "'ASSIGNED TO1_1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="ASSIGNED TO"
-                        FieldName: ="ASSIGNED TO"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =5
-                        ZIndex: =34
-
-                    "'STRATEGY STAGE1_1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="STRATEGY STAGE"
-                        FieldName: ="STRATEGY STAGE"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =6
-                        ZIndex: =35
-
-                    "'TASK TITLE1_1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="TASK TITLE"
-                        FieldName: ="TASK TITLE"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =7
-                        ZIndex: =36
-
-            DeleteConfirmDialogContainer1_3 As groupContainer.verticalAutoLayoutContainer:
-                DropShadow: =DropShadow.Light
-                FillPortions: =7
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                Visible: =If(deleteMode, true, false)
-                Width: =0
-                ZIndex: =25
-
-                ConfirmDeletionLabel1_3 As label:
-                    Align: =Align.Center
-                    AlignInContainer: =AlignInContainer.Stretch
+                Form2 As form.PowerApps_CoreControls_Form:
                     BorderColor: =App.Theme.Colors.Darker40
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FillPortions: =1
-                    Font: =App.Theme.Font
-                    Size: =13
-                    Text: ="Are you sure you want to delete this record?"
-                    ZIndex: =26
-
-                ConfirmDeleteButtonBarContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
-                    DropShadow: =DropShadow.Light
-                    LayoutGap: =15
-                    LayoutJustifyContent: =LayoutJustifyContent.Center
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    LayoutWrap: =true
-                    RadiusBottomLeft: =4
-                    RadiusBottomRight: =4
-                    RadiusTopLeft: =4
-                    RadiusTopRight: =4
-                    ZIndex: =27
-
-                    CancelDeleteButton1_3 As button:
-                        BorderColor: =App.Theme.Colors.Primary
-                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =App.Theme.Colors.Primary
-                        Font: =App.Theme.Font
-                        FontWeight: =FontWeight.Semibold
-                        HoverBorderColor: =App.Theme.Colors.Darker10
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =App.Theme.Colors.Darker10
-                        OnSelect: |-
-                            =UpdateContext({ deleteMode: false, deleteCancelled: true })
-                        PressedBorderColor: =App.Theme.Colors.Darker40
-                        PressedColor: =Self.Color
-                        PressedFill: =App.Theme.Colors.Darker40
-                        Size: =15
-                        Text: ="Cancel"
-                        ZIndex: =28
-
-                    ConfirmDeleteButton1_3 As button:
-                        BorderColor: =App.Theme.Colors.Primary
-                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =App.Theme.Colors.Primary
-                        Font: =App.Theme.Font
-                        FontWeight: =FontWeight.Semibold
-                        HoverBorderColor: =App.Theme.Colors.Darker10
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =App.Theme.Colors.Darker10
-                        OnSelect: |-
-                            =Remove([@PowerAppsTesting], selectedRecord); If(IsEmpty(Errors([@PowerAppsTesting], selectedRecord)), UpdateContext( { CurrentItem: First([@PowerAppsTesting]), itemSelected: false, editMode: false, newMode: false, deleteMode: false }));
-                        PressedBorderColor: =App.Theme.Colors.Darker40
-                        PressedColor: =Self.Color
-                        PressedFill: =App.Theme.Colors.Darker40
-                        Size: =15
-                        Text: ="Delete"
-                        ZIndex: =29
+                    DataSource: =colData
+                    UseFluentV9Cards: =true
+                    X: =40
+                    Y: =40
+                    ZIndex: =1
 
     ButtonCanvas1_1 As Button:
         BasePaletteColor: =
@@ -620,24 +655,26 @@
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontColor: =
-        Height: =40
+        FontSize: |
+            =10
+        Height: =23
         OnSelect: =ClearCollect(colData, {})
         Text: ="Clear Selection"
         Width: =100
-        X: =285
-        Y: =210
+        X: =156
+        Y: =228
         ZIndex: =3
 
     Container2_1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
-        Height: =418
+        Height: =582
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Width: =377
-        X: =718
-        Y: =324
+        Width: =186
+        X: =1164
+        Y: =100
         ZIndex: =4
 
         "'Editing Form_1' As form.PowerApps_CoreControls_Form":
