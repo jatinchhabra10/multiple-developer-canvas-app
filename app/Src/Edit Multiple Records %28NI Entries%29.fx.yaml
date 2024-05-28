@@ -485,12 +485,15 @@
                     DisplayMode: =DisplayMode.Edit
                     Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
                     Items: =colData
+                    LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                    LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
                     onCellValueChange: =false
                     onFilter: =false
                     onNavigate: =false
                     onRowSelect: =false
                     onSave: =false
-                    OnSelect: =Set(isContainerVisible, true)
+                    OnSelect: |
+                        =Set(showDiscardAndContainer, !IsBlank(Table.Selected));
                     Visible: =true
                     Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
                     X: =0
@@ -634,17 +637,6 @@
                         Text: ="Delete"
                         ZIndex: =29
 
-    ButtonCanvas1 As Button:
-        BasePaletteColor: =
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =
-        Height: =42
-        Text: ="Update"
-        Width: =152
-        X: =1180
-        Y: =700
-        ZIndex: =2
-
     "'Clear Selection' As Button":
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
@@ -657,7 +649,7 @@
         Y: =210
         ZIndex: =3
 
-    Container2 As groupContainer.manualLayoutContainer:
+    "'Editing Data Container' As groupContainer.manualLayoutContainer":
         BorderStyle: =BorderStyle.None
         Fill: =RGBA(180, 214, 250, 1)
         Height: =418
@@ -665,6 +657,7 @@
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
+        Visible: =showDiscardAndContainer
         Width: =377
         X: =25
         Y: =324
@@ -988,4 +981,41 @@
                     X: =0
                     Y: =DataCardKey18.Y
                     ZIndex: =7
+
+    "'Save and Discard Button Container' As groupContainer.manualLayoutContainer":
+        Height: =31
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: =showDiscardAndContainer
+        Width: =253
+        X: =87
+        Y: =700
+        ZIndex: =7
+
+        ButtonCanvas5 As Button:
+            AccessibleLabel: ="Discard"
+            Appearance: ='ButtonCanvas.Appearance'.Primary
+            DisplayMode: =DisplayMode.Edit
+            Height: =31
+            OnSelect: =Set(showDiscardAndContainer, false);
+            Text: ="Discard"
+            Visible: |
+                =!IsBlank(Table.Selected)
+            Width: =96
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Save As Button:
+            DisplayMode: =DisplayMode.Edit
+            Height: =31
+            OnSelect: =SubmitForm('Editing Form') 
+            Text: ="Save"
+            Visible: =!IsBlank(Table.Selected)
+            Width: =96
+            X: =157
+            Y: =0
+            ZIndex: =2
 
