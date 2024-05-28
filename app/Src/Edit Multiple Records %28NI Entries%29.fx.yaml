@@ -1191,6 +1191,7 @@
     ButtonCanvas3 As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
+        OnSelect: =SubmitForm('Editing Form')
         Text: ="Confirm"
         Width: =96
         X: =289
