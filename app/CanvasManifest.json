@@ -99,7 +99,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 2,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -137,6 +137,7 @@
     "Existing Strategy Baseline",
     "Edit Multiple Records",
     "Edit Multiple Records (NI Entries)",
+    "Edit Multiple Records (NI Entries)_1",
     "Existing Strategy Table View"
   ]
 }
