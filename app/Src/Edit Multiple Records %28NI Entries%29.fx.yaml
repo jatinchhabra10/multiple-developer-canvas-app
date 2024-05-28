@@ -2,7 +2,7 @@
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
-    ScreenContainer1_2 As groupContainer.verticalAutoLayoutContainer:
+    "'Edit Multiple Records Screen Container' As groupContainer.verticalAutoLayoutContainer":
         DropShadow: =DropShadow.Light
         Fill: =RGBA(250, 250, 250, 1)
         Height: =Parent.Height
@@ -22,6 +22,7 @@
         ZIndex: =1
 
         TableNameContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.Light
             FillPortions: =0
             Height: =68
@@ -58,6 +59,7 @@
                 ZIndex: =4
 
         BodyContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.Light
             LayoutGap: =16
             LayoutMinHeight: =100
@@ -483,14 +485,12 @@
                     DisplayMode: =DisplayMode.Edit
                     Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
                     Items: =colData
-                    LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
-                    LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
                     onCellValueChange: =false
                     onFilter: =false
                     onNavigate: =false
                     onRowSelect: =false
                     onSave: =false
-                    OnSelect: =false
+                    OnSelect: =Set(isContainerVisible, true)
                     Visible: =true
                     Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
                     X: =0
@@ -657,47 +657,21 @@
         Y: =210
         ZIndex: =3
 
-    ButtonCanvas3 As Button:
-        BasePaletteColor: =
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =
-        Height: =32
-        OnSelect: =SubmitForm('Editing Form') & Refresh(colData)
-        Text: ="Confirm"
-        Visible: =!IsBlank(Table.Selected)
-        Width: =96
-        X: =734
-        Y: =592
-        ZIndex: =4
-
-    ButtonCanvas3_1 As Button:
-        BasePaletteColor: =
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =
-        Height: =32
-        OnSelect: |
-            =Set(isContainerVisible, false)
-        Text: ="Discard"
-        Visible: =!IsBlank(Table.Selected)
-        Width: =96
-        X: =500
-        Y: =592
-        ZIndex: =5
-
     Container2 As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
+        Fill: =RGBA(180, 214, 250, 1)
         Height: =418
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Visible: =!IsBlank(Table.Selected)
         Width: =377
-        X: =472
-        Y: =282
+        X: =25
+        Y: =324
         ZIndex: =6
 
         "'Editing Form' As form.PowerApps_CoreControls_Form":
+            AcceptsFocus: =false
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.None
             DataSource: =PowerAppsTesting
@@ -706,7 +680,7 @@
             Item: =Table.Selected
             UseFluentV9Cards: =true
             Visible: |
-                =!IsBlank(Table.Selected) && isContainerVisible
+                =true
             Width: =377
             ZIndex: =1
 
