@@ -674,6 +674,7 @@
             Height: =418
             Item: =Table.Selected
             UseFluentV9Cards: =true
+            Visible: =!IsBlank(Table.Selected)
             Width: =374
             ZIndex: =1
 
@@ -1193,6 +1194,7 @@
         Height: =32
         OnSelect: =SubmitForm('Editing Form')
         Text: ="Confirm"
+        Visible: =!IsBlank(Table.Selected)
         Width: =96
         X: =289
         Y: =700
@@ -1204,6 +1206,7 @@
         FontColor: =
         Height: =32
         Text: ="Discard"
+        Visible: =!IsBlank(Table.Selected)
         Width: =96
         X: =45
         Y: =700
