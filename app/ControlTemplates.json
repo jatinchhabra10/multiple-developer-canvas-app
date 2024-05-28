@@ -70,6 +70,21 @@
     "OverridableProperties": {},
     "Version": "2.1.0"
   },
+  "Date picker": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_DatePickerCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_DatePickerCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Date picker",
+    "Version": "0.0.20"
+  },
   "datepicker": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -83,6 +98,21 @@
     "Name": "datepicker",
     "OverridableProperties": {},
     "Version": "2.6.0"
+  },
+  "Dropdown": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_DropdownCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_DropdownCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Dropdown",
+    "Version": "0.0.29"
   },
   "form": {
     "CustomGroupControlTemplateName": "",
@@ -297,6 +327,21 @@
     "OverridableProperties": {},
     "TemplateDisplayName": "Text",
     "Version": "0.0.25"
+  },
+  "Text input": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TextInputCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_TextInputCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Text input",
+    "Version": "0.0.26"
   },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",
