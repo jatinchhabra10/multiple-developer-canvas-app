@@ -669,6 +669,7 @@
 
         "'Editing Form' As form.PowerApps_CoreControls_Form":
             BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.None
             DataSource: =PowerAppsTesting
             Fill: =RGBA(180, 214, 250, 1)
             Height: =418
