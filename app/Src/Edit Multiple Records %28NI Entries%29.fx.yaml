@@ -478,7 +478,7 @@
                         Width: =50
                         ZIndex: =7
 
-                Table1 As Table.pcfdataset:
+                Table As Table.pcfdataset:
                     DisplayMode: =DisplayMode.Edit
                     Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
                     Items: =colData
@@ -644,7 +644,9 @@
         ZIndex: =2
 
     "'Clear Selection' As Button":
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =40
         OnSelect: =ClearCollect(colData, {})
         Text: ="Clear Selection"
@@ -652,4 +654,25 @@
         X: =285
         Y: =210
         ZIndex: =3
+
+    Container2 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =418
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =374
+        X: =28
+        Y: =324
+        ZIndex: =4
+
+        Form2 As form.PowerApps_CoreControls_Form:
+            BorderColor: =App.Theme.Colors.Darker40
+            Height: =418
+            Item: =Table.Selected
+            UseFluentV9Cards: =true
+            Visible: =!IsBlank(Table.Selected)
+            Width: =374
+            ZIndex: =1
 

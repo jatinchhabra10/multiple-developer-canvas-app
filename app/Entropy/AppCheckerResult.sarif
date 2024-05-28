@@ -14,6 +14,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 97,
+                  "snippet": {
+                    "text": "||"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Existing Strategy Baseline",
+                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Or"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.Items"
                 }
               ],
@@ -94,999 +134,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.Items"
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.Container2.Form2.Item"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.Items",
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.Container2.Form2.Item",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 2,
-                  "charOffset": 97,
+                  "charLength": 9,
+                  "charOffset": 5,
                   "snippet": {
-                    "text": "||"
+                    "text": ".Selected"
                   }
                 }
               },
               "properties": {
-                "member": "Items",
-                "module": "Existing Strategy Baseline",
-                "type": "'Existing Strategy Baseline'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1"
+                "member": "Item",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.Container2.Form2"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Or"
+              "DataSource"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.SearchContainer1_2.SearchInput1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.SearchContainer1_2.SearchInput1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.SearchContainer1_2.SearchInput1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.Checkbox3_1.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.Checkbox3_1.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.Checkbox3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.Table1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.Table1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.Table1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.BackIconButton1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.BackIconButton1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.BackIconButton1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.SubmitFormButton1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.SubmitFormButton1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.SubmitFormButton1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.ResetFormButton1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.ResetFormButton1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.ResetFormButton1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.EditIconButton1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.EditIconButton1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.EditIconButton1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.DeleteIconButton1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.DeleteIconButton1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.DeleteIconButton1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ButtonCanvas1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ButtonCanvas1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'.ButtonCanvas1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.SearchContainer1_1.SearchInput1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.SearchContainer1_1.SearchInput1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.SearchContainer1_1.SearchInput1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.Checkbox3.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.Checkbox3.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.Checkbox3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.BackIconButton1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.BackIconButton1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.BackIconButton1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.SubmitFormButton1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.SubmitFormButton1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.SubmitFormButton1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.ResetFormButton1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.ResetFormButton1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.ResetFormButton1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.EditIconButton1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.EditIconButton1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.EditIconButton1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.DeleteIconButton1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.DeleteIconButton1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.DeleteIconButton1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtAssignedTo.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtAssignedTo.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtAssignedTo"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtTaskDetailsUpdates.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtTaskDetailsUpdates.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtTaskDetailsUpdates"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtStrategyStage.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtStrategyStage.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtStrategyStage"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.DatePicker1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.DatePicker1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.DatePicker1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrBadTypeExpectedCompatibleWith-PropertyName",
           "ruleIndex": 1
         },
         {
@@ -1117,7 +197,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1147,7 +227,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1177,7 +257,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1207,7 +287,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1237,7 +317,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1267,7 +347,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1297,7 +377,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1327,7 +407,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1357,7 +437,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1387,7 +467,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1417,7 +497,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1447,7 +527,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1477,7 +557,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1507,7 +587,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1537,7 +617,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1567,7 +647,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1597,7 +677,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1627,7 +707,427 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.TableNameContainer1_2.Arrow2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.SearchContainer1_2.SearchInput1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.SearchContainer1_2.SearchInput1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.SearchContainer1_2.SearchInput1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.NewRecordButtonBarContainer1_2.NewRecordAddIcon1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.Checkbox3_1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.Checkbox3_1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.SidebarContainer1_2.RecordsGallery1_2.Checkbox3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.BackIconButton1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.BackIconButton1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.BackIconButton1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.SubmitFormButton1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.SubmitFormButton1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.SubmitFormButton1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.ResetFormButton1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.ResetFormButton1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.ResetFormButton1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.EditIconButton1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.EditIconButton1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.EditIconButton1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.DeleteIconButton1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.DeleteIconButton1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.SelectedRecordHeaderContainer1_2.DeleteIconButton1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.Table.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.Table.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'.ScreenContainer1_2.BodyContainer1_2.RightContainer1_2.Table"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1657,26 +1157,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.CurrentItem"
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ButtonCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.CurrentItem",
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.ButtonCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "CurrentItem",
+                "member": "AccessibleLabel",
                 "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'"
+                "type": "'Edit Multiple Records (NI Entries)'.ButtonCanvas1"
               }
             }
           ],
@@ -1686,57 +1186,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.deleteCancelled"
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.deleteCancelled",
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "deleteCancelled",
-                "module": "Edit Multiple Records (NI Entries)",
-                "type": "'Edit Multiple Records (NI Entries)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Edit Multiple Records'.CurrentItem"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.CurrentItem",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "CurrentItem",
+                "member": "AccessibleLabel",
                 "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'"
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2"
               }
             }
           ],
@@ -1746,7 +1216,217 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.TableNameContainer1_1.Arrow2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.SearchContainer1_1.SearchInput1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.SearchContainer1_1.SearchInput1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.SearchContainer1_1.SearchInput1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.NewRecordButtonBarContainer1_1.NewRecordAddIcon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.Checkbox3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.Checkbox3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.SidebarContainer1_1.RecordsGallery1_1.Checkbox3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
           "ruleIndex": 4
         },
         {
@@ -1754,19 +1434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Multiple Records'.deleteCancelled"
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.BackIconButton1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Multiple Records'.deleteCancelled",
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.BackIconButton1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "deleteCancelled",
+                "member": "AccessibleLabel",
                 "module": "Edit Multiple Records",
-                "type": "'Edit Multiple Records'"
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.BackIconButton1_1"
               }
             }
           ],
@@ -1776,8 +1456,248 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.SubmitFormButton1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.SubmitFormButton1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.SubmitFormButton1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.ResetFormButton1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.ResetFormButton1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.ResetFormButton1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.EditIconButton1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.EditIconButton1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.EditIconButton1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.DeleteIconButton1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.DeleteIconButton1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.SelectedRecordHeaderContainer1_1.DeleteIconButton1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtAssignedTo.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtAssignedTo.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtAssignedTo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtTaskDetailsUpdates.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtTaskDetailsUpdates.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtTaskDetailsUpdates"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtStrategyStage.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtStrategyStage.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.txtStrategyStage"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.DatePicker1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.DatePicker1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'.ScreenContainer1_1.BodyContainer1_1.RightContainer1_1.MainContainer1_1.DatePicker1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1807,7 +1727,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1837,7 +1757,127 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.CurrentItem"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.CurrentItem",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "CurrentItem",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.deleteCancelled"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records (NI Entries)'.deleteCancelled",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "deleteCancelled",
+                "module": "Edit Multiple Records (NI Entries)",
+                "type": "'Edit Multiple Records (NI Entries)'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.CurrentItem"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.CurrentItem",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "CurrentItem",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Multiple Records'.deleteCancelled"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Multiple Records'.deleteCancelled",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "deleteCancelled",
+                "module": "Edit Multiple Records",
+                "type": "'Edit Multiple Records'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -1860,6 +1900,20 @@
                   "Try moving your data to a different data source."
                 ],
                 "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBadTypeExpectedCompatibleWith-PropertyName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid formula. Expected a value compatible with '{0}'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }
