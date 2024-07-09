@@ -134,17 +134,24 @@
 
                     FeatureItemButton1 As Button:
                         AccessibleLabel: ="Featured item button"
+                        Align: =""
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
                         BasePaletteColor: =
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         FontSize: =20
                         FontWeight: =FontWeight.Bold
                         Height: =32
+                        Icon: =""
+                        IconRotation: =0
+                        IconStyle: ="Outline"
+                        Layout: ="Icon before"
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
                         OnSelect: =Navigate('Existing Strategy Baseline')
                         Text: ="Update Existing Strategy Baseline"
+                        VerticalAlign: =""
                         Width: =Parent.Width
                         X: =0
                         Y: =0
@@ -152,6 +159,7 @@
 
                     DescriptionText1 As Text:
                         Align: ='TextCanvas.Align'.Center
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FillPortions: =1
                         FontColor: =
@@ -229,17 +237,24 @@
 
                     FeatureItemButton21 As Button:
                         AccessibleLabel: ="Featured item button"
+                        Align: =""
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
                         BasePaletteColor: =
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         FontSize: =20
                         FontWeight: =FontWeight.Bold
                         Height: =32
+                        Icon: =""
+                        IconRotation: =0
+                        IconStyle: ="Outline"
+                        Layout: ="Icon before"
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
                         OnSelect: =Navigate('Edit Multiple Records')
                         Text: ="Update Multiple Records"
+                        VerticalAlign: =""
                         Width: =Parent.Width
                         X: =0
                         Y: =0
@@ -247,6 +262,7 @@
 
                     DescriptionText21 As Text:
                         Align: ='TextCanvas.Align'.Center
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FillPortions: =1
                         FontColor: =
@@ -324,16 +340,23 @@
 
                     "'Large Scale Data' As Button":
                         AccessibleLabel: ="Featured item button"
+                        Align: =""
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
                         BasePaletteColor: =
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         FontSize: =20
                         FontWeight: =FontWeight.Bold
                         Height: =32
+                        Icon: =""
+                        IconRotation: =0
+                        IconStyle: ="Outline"
+                        Layout: ="Icon before"
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
                         Text: ="Large Scale Data "
+                        VerticalAlign: =""
                         Width: =Parent.Width
                         X: =0
                         Y: =0
@@ -341,6 +364,7 @@
 
                     DescriptionText31 As Text:
                         Align: ='TextCanvas.Align'.Center
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FillPortions: =1
                         FontColor: =
@@ -418,16 +442,23 @@
 
                     FeatureItemButton41 As Button:
                         AccessibleLabel: ="Featured item button"
+                        Align: =""
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
                         BasePaletteColor: =
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         FontSize: =20
                         FontWeight: =FontWeight.Bold
                         Height: =32
+                        Icon: =""
+                        IconRotation: =0
+                        IconStyle: ="Outline"
+                        Layout: ="Icon before"
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
                         Text: ="Featured item"
+                        VerticalAlign: =""
                         Width: =Parent.Width
                         X: =0
                         Y: =0
@@ -435,6 +466,7 @@
 
                     DescriptionText41 As Text:
                         Align: ='TextCanvas.Align'.Center
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FillPortions: =1
                         FontColor: =
@@ -512,16 +544,23 @@
 
                     FeatureItemButton51 As Button:
                         AccessibleLabel: ="Featured item button"
+                        Align: =""
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
                         BasePaletteColor: =
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         FontSize: =20
                         FontWeight: =FontWeight.Bold
                         Height: =32
+                        Icon: =""
+                        IconRotation: =0
+                        IconStyle: ="Outline"
+                        Layout: ="Icon before"
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
                         Text: ="Featured item"
+                        VerticalAlign: =""
                         Width: =Parent.Width
                         X: =0
                         Y: =0
@@ -529,6 +568,7 @@
 
                     DescriptionText51 As Text:
                         Align: ='TextCanvas.Align'.Center
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FillPortions: =1
                         FontColor: =
@@ -606,16 +646,23 @@
 
                     FeatureItemButton61 As Button:
                         AccessibleLabel: ="Featured item button"
+                        Align: =""
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
                         BasePaletteColor: =
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         FontSize: =20
                         FontWeight: =FontWeight.Bold
                         Height: =32
+                        Icon: =""
+                        IconRotation: =0
+                        IconStyle: ="Outline"
+                        Layout: ="Icon before"
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
                         Text: ="Featured item"
+                        VerticalAlign: =""
                         Width: =Parent.Width
                         X: =0
                         Y: =0
@@ -623,6 +670,7 @@
 
                     DescriptionText61 As Text:
                         Align: ='TextCanvas.Align'.Center
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FillPortions: =1
                         FontColor: =

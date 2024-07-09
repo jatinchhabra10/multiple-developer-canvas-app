@@ -78,6 +78,7 @@
                 ZIndex: =1
 
                 TextCanvas5 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =32
@@ -88,6 +89,7 @@
                     ZIndex: =1
 
                 TextCanvas6 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -98,6 +100,7 @@
                     ZIndex: =2
 
                 TextCanvas6_1 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -108,6 +111,7 @@
                     ZIndex: =3
 
                 TextCanvas6_2 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -118,6 +122,7 @@
                     ZIndex: =4
 
                 TextCanvas6_3 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -130,20 +135,30 @@
                     ZIndex: =5
 
                 TextCanvas6_4 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
-                    Height: =30
+                    Height: =32
                     Text: ="ROI"
-                    Width: =141
+                    Width: =166
                     X: =761
                     Y: =68
                     ZIndex: =6
+
+                TextCanvas1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Residual Risk"
+                    Width: =119
+                    X: =927
+                    Y: =68
+                    ZIndex: =7
 
             Gallery1 As gallery.galleryVertical:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =App.Theme.Colors.Darker40
                 DelayItemLoading: =true
-                Items: =PowerAppsTesting
+                Items: =Filter('PowerAppsTesting',varReset)
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =287
                 LayoutMinWidth: =320
@@ -154,6 +169,7 @@
                 ZIndex: =2
 
                 AssetTag As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =32
@@ -164,11 +180,14 @@
                     ZIndex: =1
 
                 "txtExAnnualCapex As 'Text input'":
+                    Appearance: ="FilledDarker"
                     BasePaletteColor: =
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =32
                     OnChange: =Select(ButtonCanvas2)
+                    TriggerOutput: ="FocusOut"
                     Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST CAPEX or MIOT ($)'
                     Width: =122
                     X: =96
@@ -176,11 +195,14 @@
                     ZIndex: =2
 
                 "txtExAnnualOpex As 'Text input'":
+                    Appearance: ="FilledDarker"
                     BasePaletteColor: =
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =32
                     OnChange: =Select(ButtonCanvas2)
+                    TriggerOutput: ="FocusOut"
                     Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST OPEX ($)'
                     Width: =198
                     X: =218
@@ -188,11 +210,14 @@
                     ZIndex: =3
 
                 "txtExAnnualTotal As 'Text input'":
+                    Appearance: ="FilledDarker"
                     BasePaletteColor: =
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =32
                     OnChange: =Select(ButtonCanvas2)
+                    TriggerOutput: ="FocusOut"
                     Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)'
                     Width: =205
                     X: =416
@@ -200,11 +225,14 @@
                     ZIndex: =4
 
                 "txtExAnnualHours As 'Text input'":
+                    Appearance: ="FilledDarker"
                     BasePaletteColor: =
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =32
                     OnChange: =Select(ButtonCanvas2)
+                    TriggerOutput: ="FocusOut"
                     Value: =ThisItem.'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)'
                     Width: =121
                     X: =621
@@ -212,40 +240,31 @@
                     ZIndex: =5
 
                 "txtExROI As 'Text input'":
+                    Appearance: ="FilledDarker"
                     BasePaletteColor: =
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
-                    Height: =32
+                    Height: =30
                     OnChange: =Select(ButtonCanvas2)
+                    TriggerOutput: ="FocusOut"
                     Value: =ThisItem.'EXISTING STRATEGY ROI ($)'
-                    Width: =320
+                    Width: =182
                     X: =742
                     Y: =0
                     ZIndex: =6
 
-                DropdownCanvas1 As Dropdown.pcfdataset:
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =32
-                    Items: =PowerAppsTesting
-                    OnChange: =Select(ButtonCanvas2)
-                    Width: =190
-                    X: =1062
-                    Y: =0
-                    ZIndex: =7
-
-                    "'REVISED STRATEGY RESIDUAL RISK1' As pcfDataField.textualColumn":
-                        FieldDisplayName: ="REVISED STRATEGY RESIDUAL RISK"
-                        FieldName: ="REVISED STRATEGY RESIDUAL RISK"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =1
-                        ZIndex: =8
-
                 ButtonCanvas2 As Button:
+                    Align: =""
                     BasePaletteColor: =
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
+                    Icon: =""
+                    IconRotation: =0
+                    IconStyle: ="Outline"
+                    Layout: ="Icon before"
                     OnSelect: |-
                         =If(
                             IsBlank(
@@ -267,23 +286,53 @@
                                 'EXISTING STRATEGY ANNUALIZED COST OPEX ($)': txtExAnnualOpex.Value,
                                 'EXISTING STRATEGY ANNUALIZED COST TOTAL ($)': txtExAnnualTotal.Value,
                                 'EXISTING STRATEGY ANNUALIZED HOURS (HOURS)': txtExAnnualHours.Value,
-                                'EXISTING STRATEGY ROI ($)': txtExROI.Value
+                                'EXISTING STRATEGY ROI ($)': txtExROI.Value,
+                                'EXISTING STRATEGY RESIDUAL RISK': drpResidRisk.Selected.Value
                             }
                         )
+                    VerticalAlign: =""
                     Visible: =false
                     Width: =82
                     X: =1252
                     Y: =0
                     ZIndex: =8
 
-            ButtonCanvas4 As Button:
-                BasePaletteColor: =
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
+                drpResidRisk As Dropdown.pcfdataset:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Items: =["I", "II", "III", "IV", "Not Assigned"]
+                    Width: =165
+                    X: =924
+                    Y: =0
+                    ZIndex: =9
+
+            ButtonCanvas1 As Button:
+                DisplayMode: =If(CountRows(colGridUpdates)=0,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =32
+                Icon: ="ArrowUndo"
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
-                OnSelect: |-
+                OnSelect: =Clear(colGridUpdates);Set(varReset,false);Set(varReset,true)
+                Text: ="Undo"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+            ButtonCanvas4 As Button:
+                Align: =""
+                BasePaletteColor: =
+                BorderStyle: =""
+                DisplayMode: =If(CountRows(colGridUpdates)=0,DisplayMode.Disabled,DisplayMode.Edit)
+                FontColor: =
+                Height: =32
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: |
                     =Patch(
                         PowerAppsTesting,
                         ShowColumns(
@@ -297,13 +346,26 @@
                             __PowerAppsId__
                         )
                     );
-                    Notify("Updated Successfully",NotificationType.Success,3000);
-                    Clear(colGridUpdates)
+                    Notify(
+                        "Updated Successfully",
+                        NotificationType.Success,
+                        3000
+                    );
+                    Clear(colGridUpdates);
+                    Set(
+                        varReset,
+                        false
+                    );
+                    Set(
+                        varReset,
+                        true
+                    );
                 Text: ="Save"
+                VerticalAlign: =""
                 Width: =96
                 X: =0
                 Y: =0
-                ZIndex: =3
+                ZIndex: =4
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.Light

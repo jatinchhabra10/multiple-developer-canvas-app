@@ -500,60 +500,88 @@
                     Y: =0
                     ZIndex: =17
 
-                    "'ASSET TAG1' As pcfDataField.textualColumn":
+                    "'ASSET TAG1' As PowerAppsOneGridTemplate_dataField.textualColumn":
                         FieldDisplayName: ="ASSET TAG"
                         FieldName: ="ASSET TAG"
                         FieldType: ="s"
                         FieldVariantName: ="textualColumn"
+                        Height: =100
                         Order: =1
+                        Width: =100
+                        X: =0
+                        Y: =0
                         ZIndex: =30
 
-                    "'DUE DATE1' As pcfDataField.textualColumn":
+                    "'DUE DATE1' As PowerAppsOneGridTemplate_dataField.textualColumn":
                         FieldDisplayName: ="DUE DATE"
                         FieldName: ="DUE DATE"
                         FieldType: ="d"
                         FieldVariantName: ="textualColumn"
+                        Height: =100
                         Order: =2
+                        Width: =100
+                        X: =0
+                        Y: =0
                         ZIndex: =31
 
-                    "'ACR - CONFIRMED1' As pcfDataField.textualColumn":
+                    "'ACR - CONFIRMED1' As PowerAppsOneGridTemplate_dataField.textualColumn":
                         FieldDisplayName: ="ACR - CONFIRMED"
                         FieldName: ="ACR - CONFIRMED"
                         FieldType: ="s"
                         FieldVariantName: ="textualColumn"
+                        Height: =100
                         Order: =3
+                        Width: =100
+                        X: =0
+                        Y: =0
                         ZIndex: =32
 
-                    "'ACR - ORIGINAL1' As pcfDataField.textualColumn":
+                    "'ACR - ORIGINAL1' As PowerAppsOneGridTemplate_dataField.textualColumn":
                         FieldDisplayName: ="ACR - ORIGINAL"
                         FieldName: ="ACR - ORIGINAL"
                         FieldType: ="s"
                         FieldVariantName: ="textualColumn"
+                        Height: =100
                         Order: =4
+                        Width: =100
+                        X: =0
+                        Y: =0
                         ZIndex: =33
 
-                    "'ASSIGNED TO1' As pcfDataField.textualColumn":
+                    "'ASSIGNED TO1' As PowerAppsOneGridTemplate_dataField.textualColumn":
                         FieldDisplayName: ="ASSIGNED TO"
                         FieldName: ="ASSIGNED TO"
                         FieldType: ="s"
                         FieldVariantName: ="textualColumn"
+                        Height: =100
                         Order: =5
+                        Width: =100
+                        X: =0
+                        Y: =0
                         ZIndex: =34
 
-                    "'STRATEGY STAGE1' As pcfDataField.textualColumn":
+                    "'STRATEGY STAGE1' As PowerAppsOneGridTemplate_dataField.textualColumn":
                         FieldDisplayName: ="STRATEGY STAGE"
                         FieldName: ="STRATEGY STAGE"
                         FieldType: ="s"
                         FieldVariantName: ="textualColumn"
+                        Height: =100
                         Order: =6
+                        Width: =100
+                        X: =0
+                        Y: =0
                         ZIndex: =35
 
-                    "'TASK TITLE1' As pcfDataField.textualColumn":
+                    "'TASK TITLE1' As PowerAppsOneGridTemplate_dataField.textualColumn":
                         FieldDisplayName: ="TASK TITLE"
                         FieldName: ="TASK TITLE"
                         FieldType: ="s"
                         FieldVariantName: ="textualColumn"
+                        Height: =100
                         Order: =7
+                        Width: =100
+                        X: =0
+                        Y: =0
                         ZIndex: =36
 
             DeleteConfirmDialogContainer1_2 As groupContainer.verticalAutoLayoutContainer:
@@ -638,12 +666,19 @@
                         ZIndex: =29
 
     "'Clear Selection' As Button":
+        Align: =""
         BasePaletteColor: =
+        BorderStyle: =""
         DisplayMode: =DisplayMode.Edit
         FontColor: =
         Height: =40
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
         OnSelect: =ClearCollect(colData, {})
         Text: ="Clear Selection"
+        VerticalAlign: =""
         Width: =100
         X: =285
         Y: =210
@@ -696,6 +731,7 @@
                 ZIndex: =1
 
                 DataCardKey13 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =22
@@ -709,12 +745,15 @@
 
                 "DataCardValue13 As 'Text input'":
                     AccessibleLabel: =Parent.DisplayName
+                    Appearance: ="FilledDarker"
                     BasePaletteColor: =
+                    BorderStyle: =""
                     DisplayMode: =Parent.DisplayMode
                     FontColor: =
                     Height: =32
                     Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                     Required: =Parent.Required
+                    TriggerOutput: ="FocusOut"
                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                     Value: =Parent.Default
                     Width: =Parent.Width - 48
@@ -723,6 +762,7 @@
                     ZIndex: =2
 
                 ErrorMessage9 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -736,6 +776,7 @@
 
                 StarVisible9 As Text:
                     Align: ='TextCanvas.Align'.Center
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -765,6 +806,7 @@
                 ZIndex: =1
 
                 DataCardKey16 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =22
@@ -778,12 +820,15 @@
 
                 "DataCardValue15 As 'Text input'":
                     AccessibleLabel: =Parent.DisplayName
+                    Appearance: ="FilledDarker"
                     BasePaletteColor: =
+                    BorderStyle: =""
                     DisplayMode: =Parent.DisplayMode
                     FontColor: =
                     Height: =32
                     Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                     Required: =Parent.Required
+                    TriggerOutput: ="FocusOut"
                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                     Value: =Parent.Default
                     Width: =Parent.Width - 48
@@ -792,6 +837,7 @@
                     ZIndex: =2
 
                 ErrorMessage12 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -805,6 +851,7 @@
 
                 StarVisible12 As Text:
                     Align: ='TextCanvas.Align'.Center
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -834,6 +881,7 @@
                 ZIndex: =1
 
                 DataCardKey17 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =22
@@ -847,12 +895,15 @@
 
                 "DataCardValue16 As 'Text input'":
                     AccessibleLabel: =Parent.DisplayName
+                    Appearance: ="FilledDarker"
                     BasePaletteColor: =
+                    BorderStyle: =""
                     DisplayMode: =Parent.DisplayMode
                     FontColor: =
                     Height: =32
                     Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                     Required: =Parent.Required
+                    TriggerOutput: ="FocusOut"
                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                     Value: =Parent.Default
                     Width: =Parent.Width - 48
@@ -861,6 +912,7 @@
                     ZIndex: =2
 
                 ErrorMessage13 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -874,6 +926,7 @@
 
                 StarVisible13 As Text:
                     Align: ='TextCanvas.Align'.Center
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -902,6 +955,7 @@
                 ZIndex: =1
 
                 DataCardKey18 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =22
@@ -915,7 +969,9 @@
 
                 "DateValue2 As 'Date picker'":
                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                    Appearance: ="FilledDarker"
                     BasePaletteColor: =
+                    BorderStyle: =""
                     DisplayMode: =Parent.DisplayMode
                     FontColor: =
                     Height: =32
@@ -927,6 +983,8 @@
                     ZIndex: =2
 
                 HourValue2 As Dropdown.pcfdataset:
+                    Appearance: ="FilledDarker"
+                    BorderStyle: =""
                     DefaultSelectedItems: =[Text(Hour(Parent.Default),"00")]
                     DisplayMode: =Parent.DisplayMode
                     Height: =28
@@ -938,6 +996,7 @@
 
                 Separator3 As Text:
                     Align: ='TextCanvas.Align'.Center
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =HourValue2.Height
@@ -949,6 +1008,8 @@
                     ZIndex: =4
 
                 MinuteValue2 As Dropdown.pcfdataset:
+                    Appearance: ="FilledDarker"
+                    BorderStyle: =""
                     DefaultSelectedItems: =[Text(Minute(Parent.Default),"00")]
                     DisplayMode: =Parent.DisplayMode
                     Height: =28
@@ -959,6 +1020,7 @@
                     ZIndex: =5
 
                 ErrorMessage14 As Text:
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =30
@@ -972,6 +1034,7 @@
 
                 StarVisible14 As Text:
                     Align: ='TextCanvas.Align'.Center
+                    BorderStyle: =""
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
                     Height: =20
@@ -996,13 +1059,20 @@
 
         ButtonCanvas5 As Button:
             AccessibleLabel: ="Discard"
+            Align: =""
             Appearance: ='ButtonCanvas.Appearance'.Primary
             BasePaletteColor: =
+            BorderStyle: =""
             DisplayMode: =DisplayMode.Edit
             FontColor: =
             Height: =31
+            Icon: =""
+            IconRotation: =0
+            IconStyle: ="Outline"
+            Layout: ="Icon before"
             OnSelect: =Set(showDiscardAndContainer, false);
             Text: ="Discard"
+            VerticalAlign: =""
             Visible: |
                 =!IsBlank(Table.Selected)
             Width: =96
@@ -1011,12 +1081,19 @@
             ZIndex: =1
 
         Save As Button:
+            Align: =""
             BasePaletteColor: =
+            BorderStyle: =""
             DisplayMode: =DisplayMode.Edit
             FontColor: =
             Height: =31
+            Icon: =""
+            IconRotation: =0
+            IconStyle: ="Outline"
+            Layout: ="Icon before"
             OnSelect: =SubmitForm('Editing Form') 
             Text: ="Save"
+            VerticalAlign: =""
             Visible: =!IsBlank(Table.Selected)
             Width: =96
             X: =157

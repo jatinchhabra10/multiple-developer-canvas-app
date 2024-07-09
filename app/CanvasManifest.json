@@ -5,7 +5,7 @@
       "DataflowAnalysisEnabled": false,
       "DataflowAnalysisFlagStateToggledByUser": false
     },
-    "DocVersion": "1.341",
+    "DocVersion": "1.342",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
   },
@@ -35,6 +35,7 @@
       "disableruntimepolicies": false,
       "dynamicschema": false,
       "enableappembeddingux": false,
+      "enablecanvasappruntimecopilot": false,
       "enablechatbotfeature": true,
       "enablecomponentnamemaps": false,
       "enablecomponentscopeoldbehavior": false,
@@ -66,9 +67,11 @@
       "improvedtabstopbehavior": false,
       "isemptyrequirestableargument": true,
       "keeprecentscreensloaded": false,
+      "legacyformulabar": false,
       "longlivingcache": false,
       "mobilenativerendering": false,
       "nativecdsexperimental": true,
+      "offlineprofilegenerationemitscolumns": false,
       "onegrid": false,
       "optimizedforteamsmeeting": false,
       "packagemodernruntime": false,
@@ -78,7 +81,6 @@
       "powerfxv1": false,
       "primaryoutputpropertycoerciondeprecated": true,
       "projectionmapping": true,
-      "reactformulabar": true,
       "reliableconcurrent": true,
       "reservedkeywords": false,
       "rtlinstudiopreview": false,
@@ -122,7 +124,7 @@
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "87a292e2-9ec9-438a-bd8a-b4a2f592cd55",
+    "AppName": "Update Base Plant Asset Strategy Tracking Tool",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",

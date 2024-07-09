@@ -54,7 +54,7 @@
     "Name": "PowerApps_CoreControls_ButtonCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Button",
-    "Version": "0.0.29"
+    "Version": "0.0.42"
   },
   "checkbox": {
     "CustomGroupControlTemplateName": "",
@@ -83,7 +83,7 @@
     "Name": "PowerApps_CoreControls_DatePickerCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Date picker",
-    "Version": "0.0.20"
+    "Version": "0.0.32"
   },
   "datepicker": {
     "CustomGroupControlTemplateName": "",
@@ -112,7 +112,7 @@
     "Name": "PowerApps_CoreControls_DropdownCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Dropdown",
-    "Version": "0.0.29"
+    "Version": "0.0.41"
   },
   "form": {
     "CustomGroupControlTemplateName": "",
@@ -126,7 +126,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "form",
     "OverridableProperties": {},
-    "Version": "2.4.1"
+    "Version": "2.4.2"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -243,18 +243,28 @@
     "Version": "2.5.1"
   },
   "pcfDataField": {
-    "CustomGroupControlTemplateName": "",
     "FirstParty": true,
     "Id": "http://microsoft.com/appmagic/pcfDataField",
+    "IsComponentTemplate": false,
+    "IsPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "pcfDataField",
+    "Version": "1.5.0"
+  },
+  "PowerAppsOneGridTemplate_dataField": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/PowerAppsOneGridTemplate_dataField",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "pcfDataField",
+    "Name": "PowerAppsOneGridTemplate_dataField",
     "OverridableProperties": {},
-    "Version": "1.4.0"
+    "Version": "1.5.0"
   },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
@@ -297,7 +307,7 @@
     "Name": "PowerAppsOneGrid",
     "OverridableProperties": {},
     "TemplateDisplayName": "Table",
-    "Version": "1.0.190"
+    "Version": "1.0.200"
   },
   "text": {
     "CustomGroupControlTemplateName": "",
@@ -326,7 +336,7 @@
     "Name": "PowerApps_CoreControls_TextCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text",
-    "Version": "0.0.25"
+    "Version": "0.0.39"
   },
   "Text input": {
     "CustomGroupControlTemplateName": "",
@@ -341,7 +351,7 @@
     "Name": "PowerApps_CoreControls_TextInputCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text input",
-    "Version": "0.0.26"
+    "Version": "0.0.39"
   },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",
