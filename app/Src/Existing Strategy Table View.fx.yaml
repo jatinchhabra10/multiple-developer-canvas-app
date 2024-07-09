@@ -158,7 +158,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =App.Theme.Colors.Darker40
                 DelayItemLoading: =true
-                Items: =Filter('PowerAppsTesting',varReset)
+                Items: =Filter(PowerAppsTesting,varReset)
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =287
                 LayoutMinWidth: =320
@@ -298,6 +298,7 @@
                     ZIndex: =8
 
                 drpResidRisk As Dropdown.pcfdataset:
+                    DefaultSelectedItems: =
                     DisplayMode: =DisplayMode.Edit
                     Height: =30
                     Items: =["I", "II", "III", "IV", "Not Assigned"]
